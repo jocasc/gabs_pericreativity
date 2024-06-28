@@ -1,0 +1,39 @@
+.footer {
+    background-color: white;    
+    border-top: 1px solid #000000;
+    color: var(--black-color);    
+    margin-top: 200px;
+  
+}
+
+.footer input {    
+    background-color: var(--gray-color);
+    color: var(--black-color);    
+    border-right: 10px solid var(--gray-color);  
+    background-image: url('../img/black_lupa.png');    
+  }
+
+  .footer ::placeholder {
+    color: var(--black-color);    
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 260px;
+    gap: 10px;
+  }
+
+
+
+
+
+
+
+  
+  
+  
+
+

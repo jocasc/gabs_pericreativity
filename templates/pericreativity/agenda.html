@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header-about.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">            
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/article-fazparte.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">   
+    <link rel="stylesheet" href="{% static '/styles/css/dropdown-button.css' %}">  
+    <link rel="stylesheet" href="{% static '/styles/css/agenda.css' %}">  
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+
+    <title>Agenda</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static '/assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn" style="color:#FECE00">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>
+                                <a href="{% url 'galeria' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>                        
+                        <a href="{% url 'visual' %}">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn" style="color:#FECE00">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>  
+      
+    <section>
+        <div class="azul">
+            <h1>&nbsp;AGENDA&nbsp;</h1>
+            <h1>&nbsp;AGENDA&nbsp;</h1>            
+            <h1>&nbsp;AGENDA&nbsp;</h1>                        
+            <h1>&nbsp;AGENDA&nbsp;</h1>
+            <h1>&nbsp;AGENDA&nbsp;</h1>
+            <h1>&nbsp;AGENDA&nbsp;</h1>
+            <h1>&nbsp;AGENDA&nbsp;</h1>
+            
+            
+            </div>
+        <div class="article">
+
+            <div class="calendar">
+                <div class="calendar-content">                    
+                    <button class="calendar-year active">2023 <span>+</span></button>
+                    <div class="calendar-events">
+                        <div>
+                            <p class="calendar-events-title">Comunicação no XII Congresso Português de Sociologia da APS</p>
+                            <p class="calendar-events-description">Entre os dias 4 e 6 de abril de 2023, a equipa do PERICREATIVITY participou no “XII Congresso Português de Sociologia” da Associação Portuguesa de Sociologia (APS), na Faculdade de Economia da Universidade de Coimbra (FE-UC), Portugal, com a comunicação “Criatividades periféricas numa sociedade atravessada por processos de polarização: das desigualdades às oportunidades”.</p>                            
+                        </div>
+                        <div>
+                            <p class="calendar-events-title">Comunicação na ESA RN27 Mid-Term Conference</p>
+                            <p class="calendar-events-description">Entre os dias 21 e 22 de setembro de 2023, a equipa do PERICREATIVITY participou ESA RN37 Mid-Term Conference:  Territories, communities and sustainability: views from Southern Europe, na Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa (FCSH-UNL) Portugal. Foi aqui apresentada a comunicação “The transformation of a community through culture and artistic practice in the Torre neighbourhood, metropolitan area of Lisbon”.</p>
+                        </div>
+                        <div>
+                            <p class="calendar-events-title">Diálogo com o trabalho da investigadora Adrienne Lee Aterberry (SUNY)</p>
+                            <p class="calendar-events-description">Em novembro de 2023, a investigadora Adrienne Lee Aterberry, da Universidade do Estado de Nova Iorque (SUNY), foi visitante no Instituto de Sociologia da Universidade do Porto (IS-UP), com um programa de atividades intitulado “Growing up in the 21st Century: Unpacking the Facets of Contemporary Youth”. A 23 de novembro, a equipa do PERICREATIVITY participou na mesa redonda “Youth: migration, racism and ethnicities”, com a comunicação “Youth public policy in Portugal: Peripheral (im)possibilities”.</p>    
+                        </div>
+                        <div>
+                            <p class="calendar-events-title">Participação na conferência Youth Action Culture</p>
+                            <p class="calendar-events-description">Entre os dias 13 e 14 de novembro 2023, a equipa do PERICREATIVITY participou no Congresso Internacional “Youth Action Culture – Rumo à Democracia Cultural”, realizada nas Caldas da Rainha, Portugal, onde apresentou o projeto no painel “Projetos Inspiradores I: ARTivismo, política, cidadania e direitos culturais”. O encontro foi organizado colaborativamente entre o Plano Nacional das Artes (PNA), a Rede Europeia de Observatórios no Campo das Artes e da Educação Cultural (ENO), a Fundação Calouste Gulbenkian, a Escola Superior de Artes e Design das Caldas da Rainha (ESAD.CR) (Cátedra UNESCO em “Gestão das Artes e da Cultura, Cidades e Criatividade” do Instituto Politécnico de Leiria) e deu seguimento à publicação da Carta de Porto Santo (2021).</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agenda">
+                <h2 class="agenda-title"> participação na conferência youth action culture</h2>
+                <p class="agenda-details">Entre os dias 13 e 14 de novembro 2023, a equipa do PERICREATIVITY participou no Congresso Internacional “Youth Action Culture – Rumo à Democracia Cultural”, realizada nas Caldas da Rainha, Portugal, onde apresentou o projeto no painel “Projetos Inspiradores I: ARTivismo, política, cidadania e direitos culturais”. O encontro foi organizado colaborativamente entre o Plano Nacional das Artes (PNA), a Rede Europeia de Observatórios no Campo das Artes e da Educação Cultural (ENO), a Fundação Calouste Gulbenkian, a Escola Superior de Artes e Design das Caldas da Rainha (ESAD.CR) (Cátedra UNESCO em “Gestão das Artes e da Cultura, Cidades e Criatividade” do Instituto Politécnico de Leiria) e deu seguimento à publicação da Carta de Porto Santo (2021).</p>
+                <div class="agenda__more">
+                    <p class="agenda__more-more"><a href="https://portosantocharter.eu/" target="_blank">SAIBA MAIS</a></p>
+                    <p class="agenda__more-others"><a href="https://www.youtube.com/watch?v=FQvJYir-FkA" target="_blank">LIVRO DE RESUMOS</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static 'assets/img/fct_amarelo.png' %}" width="120"> <!-- 120 -->
+                <img src="{% static 'assets/img/iscte_amarelo.png' %}" alt="" width="90"> <!-- 90 -->
+                <img src="{% static 'assets/img/cies_amarelo.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/flup_amarelo.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/isup_amarelo.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/nova_amarelo.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/cics_amarelo.png' %}" alt="" width="70">
+                <img src="{% static 'assets/img/nova_fcsh_amarelo.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/inet_amarelo.png' %}" alt="" width="90">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(blog/img/black_lupa.png); display:none">    
+                <div class="redes_sociais">
+                    <a href="https://www.instagram.com/_pericreativity/" target="_blank"><img src="{% static 'assets/img/instagram_logo_amarelo.png' %}" alt="" width="40"></a>
+                    <a href="https://www.facebook.com/pericreativities" target="_blank"><img src="{% static 'assets/img/facebook_logo_amarelo.png' %}" alt="" width="30"></a>
+                    <a href="https://x.com/pericreativity" target="_blank"><img src="{% static 'assets/img/x_logo_amarelo.png' %}" alt="" width="35"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script src="{% static '/js/agenda.js' %}"></script>  
+   
+   <script src="{% static '/js/header.js' %}"></script>   
+</body>
+</html>

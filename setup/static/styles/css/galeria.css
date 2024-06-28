@@ -1,0 +1,140 @@
+.azul {
+  /* background-color: green; */
+  height: 120px;
+  max-height: 150px;
+  width: 100vw;
+  font-size: 50px;
+  /* color: white;    */
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 130px;
+  text-transform: uppercase;
+  /* letter-spacing: px; */
+  animation: move-rtl 6000ms linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%)
+  }
+}  
+
+
+section h1 {
+  font-family: var(--font-title-anisette);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-top: 80px;    
+  margin-bottom: 80px;
+}
+
+
+
+.gallery {
+  /* background-color: green; */
+  width: 70vw;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;  
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  /* margin-bottom: 0px; */
+} 
+
+.gallery-card img {
+  width: 50vw;
+  min-width: 600px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.gallery p {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  width: 50vw;
+  border-bottom: 2px solid var(--yellow-color);
+  font-family: var(--font-text-adelle);
+  font-weight: 300;
+  min-width: 600px;
+  margin-bottom: 50px;  
+  line-height: 1.3;
+}
+
+ .gallery div:last-child p {
+  /* border-bottom: none; */
+  border-bottom: none;  
+}
+
+@media screen and (max-width:660px){
+  .gallery-card img {
+    width: 90vw;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-card p {
+    width: 90vw;
+    min-width: 0;
+  }
+}
+
+/* @media screen and (orientation: landscape) {
+  .azul {            
+      min-height: 100px;
+  } */
+
+@media screen and (max-width:768px){
+
+  @media only screen and (orientation: landscape) {
+
+  .gallery-card img {
+    height: 100vh;
+    width: auto;
+  }
+  
+}
+ 
+}
+
+
+@media screen and (max-width:430px){ /*375*/
+    .gallery-card {
+      line-height: 1.4;   
+      font-size: 0.9rem; 
+    }
+
+}
+
+
+
+
+ /* @media screen and (max-width:375px){
+
+  @media only screen and (orientation: landscape) {
+  .gallery {
+    background-color: lightblue;
+  }
+
+  .gallery-card p {
+    color: green;
+  }
+}
+  
+ 
+} */

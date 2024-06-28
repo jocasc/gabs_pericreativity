@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/article.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/sidenav.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/recent-texts.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/container.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/dropdown-button.css' %}"> 
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+    <title>Versão 3.0</title>
+</head>
+<body>
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">            
+                
+                <a href="{% url 'index' %}"><img src="{% static '/assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>
+                                <a href="{% url 'galeria' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'visual' %}">VISUAL</a> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div> 
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>
+        <img src="{% static '/assets/img/Logo_Horizontal_PretoFosco.png' %}" id="main-image" class="header__navbar__principal-image" alt="trademark">                        
+        <section>
+            <article class="article" id="myarticle">                
+                <p>PERICREATIVITY.<br> Criatividades Periféricas: juventude, arte e políticas públicas em territórios segregados</p>
+                <p>PERICREATIVITY visa compreender a criatividade dos jovens de territórios segregados nas duas maiores cidades portuguesas - Lisboa e Porto. É um projeto que busca aprofundar o conhecimento sobre a dinâmica criativa e artística destes jovens, em articulação com a análise das políticas públicas de inclusão social a eles dirigida. O objetivo é proporcionar novas perspetivas interseccionais e participativas que favoreçam a emancipação social e o combate à marginalização social dos jovens. PERICREATIVITY é financiado pela Fundação para a Ciência e Tecnologia, e coordenado por Otávio Raposo – Centro de Investigação e Estudos em Sociologia (CIES / ISCTE-IUL) e Lígia Ferro – Instituto de Sociologia da Universidade do Porto (IS-UP / FL-UP).</p>     
+                    
+
+                <span><a href="{% url 'pericreativity' %}">+ SAIBA MAIS</a></span>
+            </article>
+        </section>
+
+
+        <div class="azul" id="moving">
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1> 
+            <h1>DESTAQUES</h1>                 
+        </div>
+
+        <div class="container">
+            <div class="carrossel">
+                <a href="{% url 'visual_take_it' %}"><img class="mySlides w3-animate-left" src="{% static '/assets/img/destaque_inicial.png' %}"></a>
+                <a href="{% url 'explorando_o_porto' %}"><img class="mySlides w3-animate-left" src="{% static '/assets/img/segundo_destaque_inicial.png' %}"></a>
+                <a href="{% url 'kick_off_seminar' %}"><img class="mySlides w3-animate-left" src="{% static '/assets/img/terceiro_destaque_inicial.png' %}"></a> 
+                <!-- <img class="mySlides w3-animate-left" src="blog/img/segundo_destaque_inicial.png" style="width:50vw;margin-top:auto;margin-bottom:auto;">-->
+            </div>
+            <div class="container-buttons">
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+            </div>
+        </div>  
+        <!-- <hr>  -->
+
+
+        <section class="recent">
+            <h2>TEXTOS RECENTES!</h2>
+            <div class="recent-texts">
+                <div class="recent-texts-container">
+                    <p class="recent-texts__title">VISITA COLETIVA AO BAIRRO DA TORRE EM CASCAIS</p>
+                    <p class="recent-texts__author">OTÁVIO RAPOSO, LÍGIA FERRO, PEDRO VARELA, BEATRIZ LACERDA & MATEUS SADOCK</p>                        
+                    <p class="recent-texts__content">Chegámos ao bairro pelas 12h30, onde fomos logo bem recebidos pela Mamãe pelo Lenin, que da janela nos diziam que o almoço estava já pronto a carregar. A cachupa, rica e deliciosa, preparada por Mamã, foi levada e servida na associação de moradores, antiga escola primária, que é também o lugar do projeto “Take.it” [...]</p>
+                    <button class="recent-texts__more"><a href="{% url 'visita_ao_bairro' %}">+ LER MAIS</a></button>                    
+                </div>
+
+                <!-- <hr class="recent-texts__line" style="visibility:hidden"> -->
+                <div class="recent-texts__line" style="display:none"></div>
+
+                <div class="recent-texts-container" style="display: none">
+                    <p class="recent-texts__title">VISITA</p>
+                    <p class="recent-texts__author">AUTORIA</p>
+                    <p class="recent-texts__content">Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende molorissi [...]</p>
+                    <button class="recent-texts__more">+ LER MAIS</button>                    
+                </div>
+            </div>            
+        </section>            
+
+    </main>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static '/assets/img/fct_amarelo.png' %}" width="120"> <!-- 120 -->
+                <img src="{% static '/assets/img/iscte_amarelo.png' %}" alt="" width="90"> <!-- 90 -->
+                <img src="{% static '/assets/img/cies_amarelo.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/flup_amarelo.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/isup_amarelo.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/nova_amarelo.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/cics_amarelo.png' %}" alt="" width="70">
+                <img src="{% static '/assets/img/nova_fcsh_amarelo.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/inet_amarelo.png' %}" alt="" width="90">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(blog/img/black_lupa.png); display:none">    
+                <div class="redes_sociais">
+                    <a href="https://www.instagram.com/_pericreativity/" target="_blank"><img src="{% static '/assets/img/instagram_logo_amarelo.png' %}" alt="" width="40"></a>
+                    <a href="https://www.facebook.com/pericreativities" target="_blank"><img src="{% static '/assets/img/facebook_logo_amarelo.png' %}" alt="" width="30"></a>
+                    <a href="https://x.com/pericreativity" target="_blank"><img src="{% static '/assets/img/x_logo_amarelo.png' %}" alt="" width="35"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{% static '/js/script.js' %}"></script>
+    <!-- <script src="{% static '/js/burger.js' %}"></script> -->
+    <script src="{% static '/js/header.js' %}"></script>    
+</body>
+</html>

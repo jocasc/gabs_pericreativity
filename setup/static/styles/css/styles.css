@@ -1,0 +1,24 @@
+:root {
+    font-size: 16px;
+    --principal-color: #ff5c35;
+    --font-title-anisette: 'anisette-std', sans-serif; /* font-weight:300 or 700; font-style:normal */
+    --font-text-adelle: 'adelle-mono-flex', monospace; /* font-weight:300 or 400; font-style:normal  Bold is 700 */
+    --font-text-adelle-regular: 'adelle-mono', monospace; /* font-weight:400; font-style:normal */
+    --black-color: #1e1e1e;
+    --yellow-color: #FECE00;    
+    --gray-color: #F8EEE4;
+}
+
+body {
+    background-color: #FECE00;
+    /* background-color: var(--black-color); */
+    /* background-color: cadetblue; */
+}
+
+p::selection {
+    background-color: var(--principal-color);
+}
+
+.about-body {
+    background-color: white;
+}

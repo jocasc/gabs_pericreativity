@@ -1,0 +1,233 @@
+a {
+    color: var(--black-color);
+}
+
+a:link {
+    text-decoration: none;    
+}
+
+.titulo {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;       
+    margin-bottom: 30px;
+    margin-left: 17vw;
+}
+
+i {
+    color: var(--yellow-color);
+}
+
+em {
+    color: red;
+    font-weight: 700;
+}
+
+.hashtags {
+    font-family: var(--font-title-anisette);
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    align-self: flex-start;      
+    width: 67vw;
+    line-height: 1.75;    
+}
+
+.hashtags p {
+    font-weight: 700;
+    padding-bottom: 20px;    
+}
+
+
+
+.azul {    
+    width: 100vw;
+    font-size: 50px;    
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-bottom: 10px;
+    min-height: 120px;
+  }
+
+  h1 {
+    font-size: 130px;
+    text-transform: uppercase;    
+    animation: move-rtl 6000ms linear infinite;
+  }
+
+  @keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+  }  
+
+section h1 {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 80px;    
+    margin-bottom: 80px;
+}
+
+
+
+article {
+    width: 80vw;
+    display: flex;           
+    gap: 17px; 
+    justify-content: center;    
+    flex-wrap: wrap;
+    margin-top: 10px;      
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.card-textos {
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 31px;
+    border: 0.3ch solid var(--black-color);    
+    border-radius: 10px;    
+    width: 28vw;        
+    line-height: 1.95;    
+}
+
+.card-textos p:nth-child(1) {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;    
+    line-height: 1;
+    padding-bottom: 15px;
+}
+
+.card-textos p:nth-child(2) {
+    line-height: 1;    
+    padding-top: 0;
+    margin-top: 0;
+    font-family: var(--font-text-adelle);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.card-textos p:nth-child(3) {
+    padding-top: 15px;
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;    
+}
+
+.paginacao {    
+    display:flex;
+}
+
+.paginacao p {
+    font-family: var(--font-text-adelle);
+    font-weight: 300;    
+    padding-top: 10px;
+    margin-left: 78vw;    
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px){ 
+
+    .hashtags {
+        width: 75vw;        
+    }
+    
+    .titulo {
+        margin-left: 12vw;   
+        display: flex;        
+        flex-wrap: wrap;
+        width: 90vw; 
+    }
+
+
+    .card-textos {                
+        width: 85vw;  
+        padding: 40px;
+    }
+
+    .card-textos p:nth-child(1) {
+        font-size: 1.5rem;
+        padding-bottom: 25px;           
+    }
+
+    .card-textos p:nth-child(2) {
+        width: 55vw;
+        line-height: 1.2;
+    }
+
+    .card-textos p:nth-child(3) {
+        margin-top: 20px;        
+    }
+}
+
+
+@media screen and (max-width:430px){ 
+    .titulo {
+        display: flex;
+        margin-left: 4vw;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    .hashtags {
+        width: 90vw;  
+        font-size: 1.3rem;      
+    }
+
+    article {
+        width: 90vw;
+    }
+
+    .card-textos {        
+        width: 90vw;
+        padding: 25px;                 
+    }
+     
+    .card-textos p:nth-child(1) {
+        width: 80vw;        
+    }
+
+    .card-textos a:nth-child(1) {
+        width: 80vw;                
+    }
+
+    .card-textos p:nth-child(2) {
+        width: 80vw;
+    }
+
+    .card-textos p:nth-child(3) {
+        width: 80vw;
+        line-height: 1.5;
+    }
+
+    
+    .carousel-control {
+        background-color: transparent;
+        opacity: 0;
+    }
+
+}
+
+/* @media screen and (max-width:380px){ 
+    .card-textos p:nth-child(1) {
+        background-color: brown;
+        width: 80vw;
+        margin-right: 0px;
+    }
+} */

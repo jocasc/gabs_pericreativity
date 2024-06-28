@@ -1,0 +1,208 @@
+.footer {    
+    background-color: var(--black-color);    
+    border-top: 1px solid black;
+    color: var(--gray-color);    
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;  
+    font-size: 1.1rem;      
+    padding-top: 6vw;    
+    padding-left: 35px;   
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  
+
+  .footer input {
+    width: 25vw;
+    height: 10px;
+    background-color: black;
+    color: var(--gray-color);
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;
+    border-style: none;
+    background-image: url('../img/lupa.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 10px 10px 15px 10px;        
+    border-right: 10px solid black;
+    display: flex;    
+  }
+
+  .logos_e_redes_sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .redes_sociais {
+    display: flex;
+    align-items: center;
+    /* padding-right: 40px;     */
+    align-self: flex-end;    
+    padding-top: 25px;
+    gap: 10px;
+    
+    /* background-color: green; */
+  }
+
+  .redes_sociais img:nth-child(1) {
+    /* background-color: red; */
+    width: 40px;
+  }
+
+  .redes_sociais img:nth-child(2) {
+    /* background-color: yellow; */
+    width: 25px;
+  }
+
+.redes_sociais img:nth-child(3) {
+  /* background-color: brown; */
+  width: 34px;
+}
+
+  /* .redes_sociais img {
+    width: 40px;
+  } */
+
+  .logos_suporte {
+    display: flex;
+    flex-direction: row;    
+    width: 50vw; 
+    max-width: 600px;           
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    /* background-color: red; */
+    
+  }
+
+  .input_e_redes_sociais {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    
+  }
+
+  .footer ::placeholder {
+    color: var(--gray-color);
+    
+  }
+
+
+  
+
+  @media screen and (max-width:1080px){
+    .logos_suporte {
+      width: 60vw;
+      /* background-color: darkcyan; */
+    }
+
+    .logos_suporte img { 
+      /* background-color: blue; */
+       width: 15%;
+    }
+  }
+
+  
+  @media screen and (max-width:798px){
+
+    
+    .footer input {
+      width: 30vw;
+    }
+
+    /* .logos_e_redes_sociais {
+      background-color: red;
+    } */
+
+    .logos_suporte {
+      width: 40vw; 
+      /* background-color: white; */
+    }
+
+    .logos_suporte img {
+      width: 25%;
+    }
+
+    
+
+
+
+          
+  }
+
+
+  @media screen and (max-width:430px){ /*375*/
+    .footer {
+      width: 100vw;
+      /* background-color: red; */
+      padding-left: 0px;       
+    }
+    
+    .footer div:nth-child(1){
+      color:green;
+      /* visibility: hidden; */
+      /* display: none; */
+      /* background-color: yellow; */
+    }
+
+    /* mobile */
+  .logos_e_redes_sociais {
+    flex-direction: column;
+    /* background-color: green; */
+  }
+
+  .logos_suporte {
+    
+    
+    align-items: center;
+    order: 2;
+    width: 90vw;
+    /* gap: 30px; */
+    /* background-color: gray; */
+    /* flex-basis: 3;  */
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* background-color: blueviolet; */
+  }
+
+  .logos_suporte img {
+    margin-bottom: 20px;
+    width: 26%;
+  }
+
+  /* .logos_suporte {
+    display: flex;
+    flex-direction: row;    
+    width: 60vw; 
+    max-width: 800px;           
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    
+  } */
+
+  .footer input {
+    width: 85vw;
+  }
+
+  .input_e_redes_sociais {   
+    /* margin-right: auto; */
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    margin-right: 20px;
+  }
+
+
+  }    

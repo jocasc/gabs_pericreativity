@@ -1,0 +1,133 @@
+.about-body {    
+    background-color: var(--black-color);
+    color: var(--yellow-color);
+}
+
+.header__navbar-content__links a {
+    color: var(--yellow-color);
+}
+
+.header__navbar-image {
+    filter: invert(81%) sepia(41%) saturate(3050%) hue-rotate(1deg) brightness(106%) contrast(102%);
+}
+
+.header__navbar {
+    background-color: var(--black-color);
+    border-bottom: 1px solid black;
+}  
+
+.header__navbar-content { 
+    background-color: var(--black-color);
+}
+
+.header__navbar-content__links {
+    background-color: var(--black-color
+    );
+}
+
+.azul {
+    /* background-color: blue; */
+    height: 25vh;
+    width: 100vw;
+    font-size: 50px;
+    /* color: white;    */
+    display: flex;
+    justify-content: flex-start;
+    overflow: visible;
+    
+  }
+
+  h1 {
+    font-size: 130px;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    animation: move-rtl 6000ms linear infinite;
+  }
+
+  @keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+  }  
+
+emm {
+    font-family: var(--font-title-anisette);
+    font-weight: 400;
+    font-style: normal;  
+    /* background-color: brown;       */
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom:0px;
+    line-height: 0;
+}
+
+em {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal; 
+    /* background-color: green;   */
+    font-size: 1.5rem;      
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0;
+}
+
+legenda {
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;
+}
+
+section h1 {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+article {
+    /* background-color: green;  */
+    display: flex;           
+    justify-content: center;    
+    flex-wrap: wrap;
+
+}
+
+article p {
+    width: 30vw;    
+    /* background-color: green; */
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;
+    line-height: 2;  
+    padding-left: 45px;
+    padding-right: 45px;    
+}
+
+article p:nth-child(1) {
+    font-family: var(--font-text-adelle-regular);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+
+article p:nth-child(3) {
+    /* background-color: brown; */
+    padding-top: 70px;
+}
+
+article span {
+    position: absolute;
+    background-color: var(--yellow-color);
+    height: 20px;
+    width: 20px;
+    right: 250px;
+}
+
+

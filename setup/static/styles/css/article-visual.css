@@ -1,0 +1,133 @@
+a:link {
+    text-decoration: none;    
+  }
+
+a {
+    color: #1e1e1e;
+}  
+
+.azul {    
+    height: 120px;
+    max-height: 150px;
+    width: 100vw;
+    font-size: 50px;    
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 130px;
+    text-transform: uppercase;
+    /* letter-spacing: px; */
+    animation: move-rtl 6000ms linear infinite;
+  }
+
+  @keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+  }  
+
+section h1 {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 80px;    
+    margin-bottom: 80px;
+}
+
+
+article {
+    display: flex;       
+
+    justify-content: center;    
+    flex-wrap: wrap;
+    /* gap: 50px; */
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+/* article div {
+    
+    
+} */
+
+/* .visual-card {
+    display:flex;
+    flex-direction: column;
+} */
+
+.visual-card {    
+    padding-top: 30px;
+    /* padding-bottom: 15px; */
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;       
+    width: 35vw;   
+    
+    margin-right:auto;
+    margin-left: auto;
+    
+    /* margin-right: 2vw; */
+}
+
+.visual-card img {
+    width: 100%;
+    height: auto;
+}
+
+.visual-card p {
+    padding-top: 10px;
+    font-size: 1.5rem;    
+}
+
+
+@media screen and (max-width:768px){
+    .visual-card {    
+        padding-top: 30px;
+        /* padding-bottom: 15px; */
+        font-family: var(--font-title-anisette);
+        font-weight: 700;
+        font-style: normal;       
+        width: 80vw;   
+        font-size: 1.5rem;
+        margin-right:auto;
+        margin-left: auto;
+        
+        /* margin-right: 2vw; */
+    }
+
+    .visual-card p {
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .visual-card p {
+        font-size: 1.20rem;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .visual-card {
+        width: 80vw;
+        
+    }
+
+    .visual-card p {     
+        font-size: 1.25rem;
+    }
+
+    .azul {
+        height: 120px;
+    }
+} 

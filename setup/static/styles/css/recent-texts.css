@@ -1,0 +1,242 @@
+.recent {    
+    /* background-color: brown; */
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 70px;  
+    margin-bottom: 70px;   */
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* background-color: chocolate; */
+}
+
+.recent h2 {
+    color: var(--yellow-color);  
+    font-family: var(--font-title-anisette);  
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    padding-left: 10%;
+    
+}
+
+.recent-texts {
+    /* background-color: brown; */
+    display: flex;
+    column-gap: 20px;
+    width: 70vw;
+    margin-top: 70px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.recent-texts-container {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    /* background-color: yellowgreen;    */
+
+}
+
+
+
+
+.recent-texts__line {
+    background-color: var(--gray-color);    
+    border-left: 1px solid var(--gray-color);
+    height: inherit;    
+}
+
+.recent-texts__title {
+    color: var(--gray-color);
+    font-family: var(--font-title-anisette);  
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    /* background-color: brown; */
+    min-height: 12vh;
+    /* min-width: 35vw; */
+}
+
+.recent-texts__author {
+    color: var(--gray-color);
+    font-family: var(--font-title-anisette);  
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.15rem;
+    /* padding-bottom: 50px; */
+    /* padding-top: 10px; */
+    /* background-color: goldenrod; */
+    line-height: 1.15;
+    min-height: 12vh;
+    
+}
+
+.recent-texts__content {
+    color: var(--gray-color);
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 2;
+    /* background-color: cornflowerblue; */
+    min-height: 50vh;
+    font-size: 1.2rem;
+}
+
+.recent-texts__more {  
+    align-self: flex-end;  
+    color: var(--principal-color);
+    font-family: var(--font-title-anisette);  
+    font-weight: 700;
+    font-style: normal;           
+    /* background-color: brown; */
+}
+
+
+@media screen and (max-width:1080px){
+
+    .recent-texts {
+        width: 80vw;
+    }
+
+    .recent-texts-container {
+        width: 40vw;    
+    }
+
+    .recent-texts__title {
+        color: var(--gray-color);
+        font-family: var(--font-title-anisette);  
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        /* background-color: green; */
+        min-height: 12vh;
+        /* min-width: 35vw; */
+    }
+
+    .recent-texts__author {
+        line-height: 1.25;
+        /* background-color: brown; */
+    }
+
+    .recent-texts__content {    
+        font-size: 1.1rem;
+        line-height: 1.75;
+        /* background-color: blueviolet; */
+        min-height: 40vh;
+        
+    }
+
+    /* .recent-texts-container {
+        border: 5px solid red
+    } */
+    
+    
+}
+
+
+@media screen and (max-width:798px){
+    .recent h2 {
+        color: var(--yellow-color);  
+        font-family: var(--font-title-anisette);  
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+        padding-left: 10%;
+        /* color: green;
+        background-color: blue; */
+    }
+
+
+    .recent {
+        margin-top: 0px;
+    }
+
+    
+    .recent-texts {
+        display: flex;
+        flex-direction: column;
+        
+        
+        /* display: flex;
+        flex-direction: column; */
+    }  
+
+
+    .recent-texts__line {        
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-top: 1px solid var(--gray-color);        
+        width: inherit;
+
+    }
+
+    .recent-texts__content {    
+        font-size: 1.1rem;
+        line-height: 1.75;
+        /* background-color: blueviolet; */
+        min-height: 35vh;
+        
+    }
+
+
+
+    .recent-texts-container {
+        width: 80vw;
+    }
+    
+}
+
+@media screen and (max-width:430px){
+    .recent {
+        margin-top: 0px;
+    }
+    .recent-texts__title {
+        color: var(--gray-color);
+        font-family: var(--font-title-anisette);  
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.25rem;
+        padding-top: 5px;
+        /* background-color: green; */
+        min-height: 12vh;
+        width: 80vw;
+        /* min-width: 35vw; */
+    }
+
+    .recent-texts__author {
+        line-height: 1;
+        margin-top: 10px;
+        width: 80vw;
+        /* background-color: brown; */
+    }
+
+    .recent-texts__content {    
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.25;
+        /* background-color: blueviolet; */
+        width: 80vw;
+
+    }
+
+    .recent-texts__more {  
+        width: 40vw;
+        padding-top: 30px;  
+        align-self: flex-end;        
+        margin-right: -25px;                
+    }
+
+    
+    .recent-texts {
+        width: 80vw;
+        /* background-color: blue; */
+    }
+
+    
+}

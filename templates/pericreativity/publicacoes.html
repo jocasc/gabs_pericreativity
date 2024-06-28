@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header-about.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">            
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">    
+    <link rel="stylesheet" href="{% static '/styles/css/article-textos.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/footer-about.css' %}">   
+    <link rel="stylesheet" href="{% static '/styles/css/dropdown-button.css' %}">  
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+
+    <title>Sobre</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static 'assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>
+                                <a href="{% url 'galeria' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>                        
+                        <a href="{% url 'visual' %}">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>    
+    <section>
+        <div class="azul">
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>                         
+        </div>
+        <p class="titulo">PUBLICAÇÕES</p>
+        <article>
+            <div class="card-textos">
+                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
+                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
+                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
+            </div>
+            <div class="card-textos">
+                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
+                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
+                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
+            </div>
+            <div class="card-textos">
+                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
+                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
+                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
+            </div>            
+            <div class="card-textos">
+                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
+                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
+                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
+            </div>            
+        </article>
+        <div class="paginacao"><p><em>1</em> 2 3 4</p></div>
+    </section>
+    <div class="hashtags">
+        <p><i>#</i>NUVEMDETEMAS</p>
+        #cidades&nbsp;&nbsp; #quebradas&nbsp;&nbsp; #bairros&nbsp;&nbsp; #aml&nbsp;&nbsp; #takeit&nbsp;&nbsp; #periferias
+        #criatividade&nbsp;&nbsp; #segregação&nbsp;&nbsp; #políticaspúblicas&nbsp;&nbsp; #educação&nbsp;&nbsp;
+    </div>
+    
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static 'assets/img/fct_preto.png' %}" width="105">
+                <img src="{% static 'assets/img/iscte_preto.png' %}" alt="" width="80">
+                <img src="{% static 'assets/img/cies_preto.png' %}" alt="" width="125">
+                <img src="{% static 'assets/img/flup_preto.png' %}" alt="" width="95">
+                <img src="{% static 'assets/img/isup_preto.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/nova_preto.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/cics_preto.png' %}" alt="" width="90">
+                <img src="{% static 'assets/img/nova_fcsh_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/inet_preto.png' %}" alt="" width="100">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(blog/img/black_lupa.png); display:none">    
+                <div class="redes_sociais">
+                    <img src="{% static 'assets/img/instagram_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/facebook_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/x_logo_preto.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static '/js/header.js' %}"></script>     
+</body>
+</html>

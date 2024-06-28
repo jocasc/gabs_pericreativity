@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="{% static 'styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/header-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/styles.css' %}">            
+    <link rel="stylesheet" href="{% static 'styles/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/article-equipa.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/footer-about.css' %}">   
+    <link rel="stylesheet" href="{% static 'styles/css/dropdown-button.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+
+    <title>Equipa</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static '/assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>
+                                <a href="{% url 'galeria' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>                        
+                        <a href="{% url 'visual' %}">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>        
+    <section>
+        <!-- <div class="animation"><h1>EQUIPA</h1></div> -->
+        <div class="azul">
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>                                                   
+        </div>
+         
+        <article>
+            <div class="scrollmenu">
+                <a href="#"><img src="{% static '/assets/img/otavio_raposo.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/ligia_ferro.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/pedro_varela.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/beatriz_lacerda.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/mateus_sadock.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/alix_sarrouy.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/carla_malafaia.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/gabs_leal.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/joao_carlos_martins.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/joao_teixeira_lopes.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/jordi_nofre.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/leonor_medon.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/liliana_jose.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/pedro_abrantes.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/ricardo_campos.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/rita_cachado.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/teresa_seabra.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/derek_pardue.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/talja_blokland.png' %}" alt="" class="img-scroll"></a>
+                <a href="#"><img src="{% static '/assets/img/victoria_gomez.png' %}" alt="" class="img-scroll"></a>
+
+            </div>
+           
+            <div class="team-names" id="team">
+                <p>OTÁVIO RAPOSO</p>
+                <p>LIGIA FERRO</p>
+                <p>PEDRO VARELA</p>
+                <p>BEATRIZ LACERDA</p>
+                <p>MATEUS SADOCK</p>
+                <p>ALIX SARROUY</p>
+                <p>CARLA MALAFAIA</p>
+                <p>GABRIELA LEAL</p>
+                <p>JOÃO CARLOS MARTINS</p>
+                <p>JOÃO TEIXEIRA LOPES</p>
+                <p>JORDI NOFRE</p>
+                <p>LEONOR MEDON</p>
+                <p>LILIANA JOSÉ</p>
+                <p>PEDRO ABRANTES</p>
+                <p>RICARDO CAMPOS</p>
+                <p>RITA CACHADO</p>
+                <p>TERESA SEABRA</p>
+                <p>DEREK PARDUE</p>
+                <p>TALJA BLOKLAND</p>
+                <p>VICTORIA GOMES</p>
+            </div>
+            <div class="team-card">
+                <div class="team-card__header">
+                    <img src="{% static '/assets/img/otavio_raposo.png' %}" alt="" id="myphoto">
+                    <div>
+                        <p id="myname">OTÁVIO RAPOSO</p>
+                        <p id="occupation">investigador principal</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="team-card__content">
+                        <p id="mytext">Otávio Raposo é pesquisador do Centro de Investigação e Estudos de Sociologia e professor auxiliar convidado do ISCTE-Instituto Universitário de Lisboa, onde concluiu o doutoramento em antropologia. Foi pesquisador visitante nos Estados Unidos da América (Brown University e University of Massachusetts Boston) e no Brasil (UFRJ e USP). É autor e editor de várias publicações internacionais nas áreas dos estudos urbanos, culturas juvenis, arte, diáspora africana, segregação e racismo, tendo como abordagem principal a etnografia. Atualmente pesquisa as práticas artísticas dos jovens das periferias de Lisboa e Porto, bem como as políticas públicas a eles dirigidas, coordenando o projeto “Criatividades Periféricas”. Realizou diversos documentários, entre os quais “Na Quinta com Kally”, vencedor do Prémio APA (2019) na categoria filme etnográfico.</p>
+                        <p id="myemail">// otavioraposo78@gmail.com</p>
+                    </div>
+                </div>
+            </div>            
+        </article>
+
+    </section>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static '/assets/img/fct_preto.png' %}" width="105">
+                <img src="{% static '/assets/img/iscte_preto.png' %}" alt="" width="80">
+                <img src="{% static '/assets/img/cies_preto.png' %}" alt="" width="125">
+                <img src="{% static '/assets/img/flup_preto.png' %}" alt="" width="95">
+                <img src="{% static '/assets/img/isup_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/nova_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/cics_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/nova_fcsh_preto.png' %}" alt="" width="100">
+                <img src="{% static '/assets/img/inet_preto.png' %}" alt="" width="100">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(blog/img/black_lupa.png); display:none">    
+                <div class="redes_sociais">
+                    <img src="{% static 'assets/img/instagram_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/facebook_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/x_logo_preto.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+ <script>
+    
+    var team = document.getElementById('team')
+    var otavio = document.getElementById('otavio')
+    var imagensScroll = document.getElementsByClassName('img-scroll')
+
+
+
+    for(let i=0; i<team.childElementCount; i++){                
+        team.children[i].addEventListener('mouseover', (e)=> {
+            e.target.style.color = '#FECE00'
+            e.target.style.cursor = 'pointer'
+            myname.textContent = investigators[i].name
+            myphoto.src = investigators[i].imagePath
+            occupation.textContent = investigators[i].occupation
+            mytext.textContent = investigators[i].bio
+            myemail.textContent = investigators[i].email
+        })
+        team.children[i].addEventListener('mouseout', (e)=> {
+            e.target.style.color = '#1e1e1e'
+        })
+
+    }
+    
+
+    
+    var investigators = [
+        {name: 'OTÁVIO RAPOSO', occupation: 'investigador principal', imagePath: '{% static "/assets/img/otavio_raposo.png" %}', bio: "Otávio Raposo é pesquisador do Centro de Investigação e Estudos de Sociologia e professor auxiliar convidado do ISCTE-Instituto Universitário de Lisboa, onde concluiu o doutoramento em antropologia. Foi pesquisador visitante nos Estados Unidos da América (Brown University e University of Massachusetts Boston) e no Brasil (UFRJ e USP). É autor e editor de várias publicações internacionais nas áreas dos estudos urbanos, culturas juvenis, arte, diáspora africana, segregação e racismo, tendo como abordagem principal a etnografia. Atualmente pesquisa as práticas artísticas dos jovens das periferias de Lisboa e Porto, bem como as políticas públicas a eles dirigidas, coordenando o projeto “Criatividades Periféricas”. Realizou diversos documentários, entre os quais “Na Quinta com Kally”, vencedor do Prémio APA (2019) na categoria filme etnográfico.", email: "// otavioraposo78@gmail.com"},
+        {name: 'LIGIA FERRO', occupation: 'co-investigadora principal', imagePath: '{% static "assets/img/ligia_ferro.png" %}', bio: "Lígia Ferro é professora auxiliar do Departamento de Sociologia da Faculdade de Letras da Universidade do Porto. Recebeu o título de Doutoramento Europeu do Instituto Universitário de Lisboa, ISCTE-IUL (2011). Foi investigadora visitante em várias universidades da Europa, Estados Unidos da América e Brasil. Lígia Ferro foi eleita Presidente da Associação Europeia de Sociologia (ESA) em 2021 e é membro da direção da Rede Europeia de Observatórios no Campo das Artes e da Educação Cultural- ENO. É autora e editora de várias publicações em português, inglês, espanhol e francês. Ultimamente, ela tem trabalhado sobre práticas culturais, educação artística, migrações e investigação-ação, especialmente em contextos urbanos e a partir de uma perspetiva etnográfica.", email: "// lferro@letras.up.pt"},
+        {name: 'PEDRO VARELA', occupation: 'gestor científico e bolseiro pós-doc', imagePath: '{% static "assets/img/pedro_varela.png" %}', bio: "Pedro Varela é atualmente investigador integrado do Cies-iscte (Centro de Investigação e Estudos de Sociologia - Instituto Universitário de Lisboa) e bolseiro doutorado do projeto Pericreativity. Realizou o seu doutoramento no Centro de Estudos Sociais da Universidade de Coimbra no programa de Direitos Humanos nas Sociedades Contemporâneas; fez o mestrado em Antropologia no Iscte -Instituto Universitário de Lisboa; e licenciou-se em Arquitetura Paisagista no Instituto Superior de Agronomia - Universidade de Lisboa. Tem desenvolvido pesquisa e trabalho de campo sobre conservação comunitária, agricultura urbana, políticas públicas contra o racismo, história do movimento antirracista, circuitos musicais e rap. Foi também investigador júnior no Centro de Estudos Sociais da Universidade de Coimbra.", email: '// pedromfvarela@gmail.com'},
+        {name: 'BEATRIZ LACERDA', occupation: 'bolseira de doutoramente - IS - SP/FLUP', imagePath: '{% static "assets/img/beatriz_lacerda.png" %}', bio: 'Beatriz Lacerda é licenciada e mestre em Sociologia pela Faculdade de Letras da Universidade do Porto. Tem experiência em projetos de intervenção artística e comunitária na cidade do Porto, onde cruza os campos da sociologia e do cinema, através do recurso à etnografia e metodologias visuais participativas. Defendeu a sua tese de mestrado em 2022, intitulada “Pela descolonização da cidade: Redes e experiências urbanas das comunidades africanas e afrodescendentes do Porto”, sob a orientação de Lígia Ferro. Entre os projetos onde participou destacam-se a “Travessia” (2020-21), o “Clube de Cinema de Campanhã” (2021-2023); o “Rising Cinema” (2023) e o “Cinema Insuflável” (2020-2023).  Atualmente é bolseira de doutoramento no projeto “PERICREATIVITY: Criatividades Periféricas: juventude, arte e políticas públicas em territórios segregados”, coordenado por Otávio Raposo (ISCTE) e Lígia Ferro (IS-UP), onde terá oportunidade de aprofundar as pesquisas nas áreas do território e juventudes, migrações e antirracismo, etnografia e processos de coparticipação.', email: '// bunny.lacerda@gmail.com'},
+        {name: 'MATEUS SADOCK', occupation: 'bolseiro de doutoramento - CIES/ISCTE-IUL', imagePath: '{% static "assets/img/mateus_sadock.png" %}', bio: 'Mateus Sadock é licenciado e mestre em sociologia pelo ISCTE. No mestrado, realizou pesquisa etnográfica nas áreas da sociologia urbana e cultural, tendo defendido em 2020 a dissertação "Construindo resistência: um centro social autogerido em Lisboa", orientada por Otávio Raposo. Esta dissertação deu azo à publicação, em 2023, de um artigo e à co-organização de um dossiê temático, intitulado "Espaços alternativos em Lisboa e a resistência à gentrificação", na revista Etnográfica. Trabalhou na área da redução de riscos com populações marginalizadas e é atualmente bolseiro de doutoramento em antropologia no projeto PERICREATIVITY: Criatividades Periféricas, onde irá desenvolver pesquisa etnográfica sobre arte e cultura, segregação e contra-hegemonia.', email: "// mateus.sadock@gmail.com"},
+        {name: 'ALIX DIDIER SARROUY', occupation: 'investigador', imagePath: '{% static "assets/img/alix_sarrouy.png" %}', bio: 'Músico e doutorado em Sociologia das Artes pela Université Sorbonne Nouvelle e pela Universidade doMinho. Investigador integrado no Instituto de Etnomusicologia - Música & Dança, naNOVA.FCSH. Colaborador no Centro Interdisciplinar de Ciências Sociais (CICS.NOVA). Investigador principaldo projeto FCTexp “YouSound — Educação musical como ferramenta de inclusão de refugiados menores de idade na Europa” (2022-2023). Professor adjunto na Escola Superior de Artes e Design (ESAD.IPL). Em 2022 publica dois livros: coeditor de “A arte de construir cidadania: juventude, práticas criativas e ativismo” (Ed. Tinta da China); e autor de “Atores da educação musical: etnografia nos programas socioculturais El Sistema, Neojiba, Orquestra Geração” (Ed. Húmus, CICS.NOVA). Etnógrafo na periferia urbana de Lisboa, Paris, Atenas, Gotemburgo (SE), Salvador da Bahia, Maracaibo (VZ).', email: '// alixsarrouy@fcsh.unl.pt'},
+        {name: 'CARLA MALAFAIA', occupation: 'investigadora', imagePath: '{% static "assets/img/carla_malafaia.png" %}', bio: 'Carla Malafaia é Investigadora Principal no Centro de Investigação e Intervenção em Educação (CIIE-UP), na Faculdade de Psicologia e de Ciências da Educação da Universidade do Porto. Desenvolveu o subprojecto português do projeto ImagiDem, financiado pelo H2020 ERC, e é também coordenadora local da equipa da Universidade do Porto no Projeto JustFutures (FCT) e líder de WP no Projeto ClimActiC (North2020). Adicionalmente, é responsável pela avaliação externa do Projeto “Jovens Urgentes” (Fundação Calouste Gulbenkian), levado a cabo pelo CIIE-UP. É coautora de 4 livros e autora de mais de 20 capítulos e mais de 30 artigos em revistas como Social Movement Studies, YOUNG, Current Sociology, Visual Studies, Ethnography &amp; Education, The Qualitative Report e Frontiers in Psychology. Os seus interesses de investigação relacionam-se com os domínios mais vastos da educação política, da sociologia política, dos estudos de juventude e de movimentos sociais.', email: '// carlamalafaia@fpceu.pt'},
+        {name: 'GABRIELA LEAL', occupation: 'investigadora', imagePath: '{% static "assets/img/gabs_leal.png" %}', bio: 'Gabriela Leal é antropóloga e autora do livro Cidade: modos de ler, usar e se apropriar. A São Paulo do Graffiti. Atualmente é doutoranda em Estudos Urbanos (NOVA FCSH & Iscte) e integra o CICS.NOVA , onde desenvolve a sua pesquisa com bolsa concedida pela FCT. É colabora do Grupo de Estudos de Antropologia da Cidade (GEAC-USP), integrante da rede Etno.Urb e é organizadora do CAU (Coletivo de Antropologia Urbana, CICS.NOVA & Cies-Iscte). Possui mestrado em Antropologia Social e bacharelado em Ciências Sociais pela Universidade de São Paulo, e especialização em Teorias e Práticas da Comunicação pela Fundação Casper Líbero. Pesquisa temas relacionados aos usos dos espaços urbanos, epistemologias urbanas, ativismos, periferias, hip hop e práticas expressivas. Desenvolve projetos independentes no campo das artes visuais, onde já colaborou com diferentes coletivos e foi contemplada em editais de fomento à cultura (São Paulo).', email: '// gabrielaleal@fcsh.unl.pt, www.gabsleal.com'},
+        {name: 'JOÃO CARLOS MARTINS', occupation: 'investigador', imagePath: '{% static "assets/img/joao_carlos_martins.png" %}', bio: 'João Carlos Martins é doutorado (2015) em Sociologia pela Universidade NOVA de Lisboa. É membro colaborador do CICS.NOVA, NOVA FCSH e Membro Integrado do CinTurs, na Universidade do Algarve. Hoje, é professor contratado na Universidade do Algarve na Licenciatura de Sociologia e de Desporto. É membro ativo da rede de investigação sobre lazer noturno, LXNIGHTS. Adota uma visão interdisciplinar da Sociologia, Antropologia e Geografia Económica, Cultural e Social com destaque para Estudos Culturais e Urbanos. Os seus interesses científicos atuais estão ligados à interligação entre a Juventude e Criatividade; Transformação Urbana, Património Cultural, Sustentabilidade e Turismo; Participação e Investigação-Ação; Lazer Noturno e Turistificação. Tem experiência de investigação em projetos de intervenção local com financiamento nacional e europeu na área do Lazer Noturno, Participação Comunitária, Património Cultural, Sustentabilidade Turística e Juventude.', email: '// joaomartins.cf@gmail.com'},
+        {name: 'JOÃO TEIXEIRA LOPES', occupation: 'investigador', imagePath: '{% static "assets/img/joao_teixeira_lopes.png" %}', bio: 'João Teixeira Lopes é Licenciado em Sociologia pela Faculdade de Letras da Universidade do Porto (1992) Mestre em ciências sociais pelo Instituto de Ciências Sociais da Universidade de Lisboa (1995) com a Dissertação “Tristes Escolas - Um Estudo sobre Práticas Culturais Estudantis no Espaço Escolar Urbano” Doutorado em Sociologia da Cultura e da Educação (1999) com a Dissertação “A Cidade e a Cultura - Um Estudo sobre Práticas Culturais Urbanas”. Integrou o Observatório das Actividades Culturais (1996-96) e a equipa coordenadora do Relatório das Políticas Culturais Nacionais (1985-95). Foi programador do Porto Capital Europeia da Cultura 2001. Presidiu ao Departamento de Sociologia da FLUP (2011-19) e à Associação Portuguesa de Sociologia (2016-21). É coordenador do Instituto de Sociologia da Universidade do Porto desde 2020. Tem mais de 50 livros (sozinho ou em co-autoria) nos domínios da sociologia da cultura, das desigualdades sociais, da cidade, juventude e educação, bem como museologia e estudos territoriais.', email: '// jmteixeiralopes@gmail.com'},
+        {name: 'JORDI NOFRE', occupation: 'investigador', imagePath: '{% static "assets/img/jordi_nofre.png" %}', bio: 'Jordi Nofre é doutorado em Geografia Humana pela Universidade de Barcelona (2009) e atualmente é Investigador Principal FCT em Geografia Urbana no Centro Interdisciplinar de Ciências Sociais da Universidade NOVA de Lisboa, apoiado pelo Programa de Estímulo ao Emprego Científico da Fundação para a Ciência e Tecnologia. A sua investigação inclui 3 tópicos principais: (i) Vida nocturna, turismo e transformações urbanas; (ii) Geografias sociais da juventude nos países euro-mediterrânicos; e (iii) Ambiente, sociedade e mudança global. É editor de Nighttime Tourism (Edward Elgar, 2024), Exploring Nightlife: Space, Society and Governance (Roman Littlefield, 2018), e do número especial "Nocturnal Cities: Passado, Presente e Futuro" (Forum Sociológico, 2023). Nofre é fundador e coordenador do grupo de investigação LXNIGHTS e cofundador da International Night Studies Network. Nofre é membro do Conselho Consultivo do Festival MIL Lisboa e consultor científico da Comissão da Noite de Barcelona desde 2019. Além disso, Nofre foi nomeado perito científico da Iniciativa de Barcelona sobre o Uso do Tempo para uma Sociedade Saudável (2023), com vista a novas formas de organização quotidiana destinadas a melhorar o bem-estar social e uma melhor vida comunitária.', email: '// jnofre@fcsh.unl.pt'},
+        {name: 'LEONOR MEDON', occupation: 'investigadora', imagePath: '{% static "assets/img/leonor_medon.png" %}', bio: 'Leonor Medon nasceu no Porto em 2001. Licenciada em Sociologia pela Faculdade de Letras da Universidade do Porto, frequenta atualmente o Mestrado em Sociologia na mesma instituição. É Bolseira de Investigação no Instituto de Sociologia da Universidade do Porto (IS-UP), onde integra projetos nas temáticas da cultura, desigualdades, memória, juventude e intervenção comunitária. Participa desde 2022 no Projeto Museu da Pessoa, pela recolha de testemunhos orais e histórias de atores sociais que enfrentam desigualdades sociais diversas. No âmbito da sua dissertação de mestrado, pretende explorar o papel da cultura e das artes para o empoderamento e participação juvenil.', email: '// lmedon@letras.up.pt'},
+        {name: 'LILIANA JOSE', occupation: 'investigadora', imagePath: '{% static "assets/img/liliana_jose.png" %}', bio: 'Liliana Moreira é socióloga e doutoranda em Sociologia (Universidade do Porto), desempenha funções de técnica superior na Agência para a Integração, Migrações e Asilo (AIMA, I.P.), sendo investigadora do Observatório das Comunidades Ciganas (ObCig), desde 2015. Ao longo do seu percurso profissional, tem trabalhado e investigado nos domínios temáticos das Desigualdades Sociais, da Educação e Formação, sobretudo de adultos com necessidades de literacia e baixos níveis de qualificação escolar e profissional, e das Políticas Públicas para a Igualdade, Integração/Inclusão e Participação das Pessoas Portuguesas Ciganas. É membro efetivo da Comissão Diretiva da Associação Portuguesa para a Cultura e Educação Permanente (APCEP).', email: '// liliana.jose.alves.moreira@gmail.com'},
+        {name: 'PEDRO ABRANTES', occupation: 'investigador', imagePath: '{% static "assets/img/pedro_abrantes.png" %}', bio: 'Pedro Abrantes é licenciado e doutorado em Sociologia pelo ISCTE. Lecionou e investigou em várias instituições, em Portugal e no México, centrando-se nas áreas da educação, desigualdades sociais e percursos de vida. Simultaneamente, tem procurado para o desenvolvimento dos sistemas educativos, através de sucessivas colaborações com a administração local e nacional, bem como organismos e fundações internacionais. É Professor Auxiliar da Universidade Aberta desde 2013, tendo estado em comissão de serviço, entre 2016 e 2022, como assessor e subdiretor-geral no Ministério da Educação. Membro da Associação Portuguesa de Sociologia, coordenando atualmente a secção de Classes, Desigualdades e Políticas Públicas. Publicou: "Socialization and inequality” (Current Sociology, 2013), “Gendering social mobility” (Gender & Education, 2014), “Full-time Schools in Portugal” (JNAER, 2023), “Analysing biographies in transnational educational spaces” (Globalisation, Societies and Education, 2023).', email: '// pedro.abrantes@iscte-iul.pt'},
+        {name: 'RICARDO CAMPOS', occupation: 'investigador', imagePath: '{% static "assets/img/ricardo_campos.png" %}', bio: 'Ricardo Campos é investigador principal e membro da direcção do Centro Interdisciplinar de Ciências Sociais da Faculdade de Ciências Sociais e Humanas (CICS.Nova) e professor convidado no Mestrado em Relações Interculturais (Universidade Aberta). É membro fundador e cocoordenador da Rede Luso-Brasileira de pesquisa em Artes e Intervenções Urbanas (RAIU), Coordenou os projectos Artcitizenship - Young people and the arts of citizenship: activism, participatory culture and creative practices (2019-2022), TransUrbArts - Emergent Urban Arts is Lisbon and São Paulo (2016-2020) ambos com o apoio financeiro da Fundação para a Ciência e Tecnologia. Ao longo dos anos tem realizado pesquisa em vários centros de investigação, em torno das temáticas das culturas juvenis urbanas, da arte urbana, dos media digitais, da antropologia visual e da cultura visual, tendo diversos capítulos de livros e artigos em revistas nacionais e internacionais sobre estes temas.', email: '// rmocampos@yahoo.com.br'},
+        {name: 'RITA CACHADO', occupation: 'investigadora', imagePath: '{% static "assets/img/rita_cachado.png" %}', bio: 'Rita Cachado é doutorada é Antropologia através do Programa Internacional de Doutoramento em Antropologia Urbana (Lisboa, Iscte, Tarragona, URV, 2008), e investigadora integrada no CIES, Centro de Investigação e Estudos de Sociologia, Iscte. É professora convidada do Departamento de Métodos de Pesquisa Social, também no Iscte. Começou por trabalhar sobre pós-colonialismo, migrações e habitação social, mobilidades e transnacionalidade Sul asiática, e atualmente dedica-se ao estudo da Etnografia Urbana em Portugal e à salvaguarda de arquivos etnográficos.', email: '// rita.cachado@iscte-iul.pt'},
+        {name: 'TERESA SEABRA', occupation: 'investigadora', imagePath: '{% static "assets/img/teresa_seabra.png" %}', bio: 'Teresa Seabra é professora associada do Departamento de Sociologia do ISCTE-Instituto Universitário de Lisboa e investigadora sénior do Centro de Investigação e Estudos de Sociologia (CIES-IUL) do Instituto Universitário de Lisboa desde 1993. Principais áreas de investigação: desigualdades sociais na educação; descendentes de imigrantes na escola; educação familiar; o efeito da escola no sucesso escolar dos alunos. Tem sido coordenadora em vários projetos de investigação nacionais e autora e coautora de vários artigos em revistas científicas, capítulos de livros e livros. Entre as publicações, destaca-se o livro Adaptação e Adversidade: O Desempenho Escolar dos Alunos de Origem Indiana e Cabo-Verdiana no Ensino Básico, publicado em 2010 pelo Instituto de Ciências Sociais (ICS-UL). Membro do conselho consultivo da Revista de Sociologia da Educação da Associação Portuguesa de Sociologia (APS). Foi diretora do Mestrado em Educação e Sociedade no ISCTE nos últimos vinte anos.', email: '// teresa.seabra@iscte-iul.pt'},
+        {name: 'DEREK PARDUE', occupation: 'consultor', imagePath: '{% static "assets/img/derek_pardue.png" %}', bio: 'Derek Pardue é Professor Associado na Universidade de Aarhus, em Aarhus, Dinamarca. Realizou trabalho de campo em São Paulo, Brasil, Lisboa, Portugal, Praia, Cabo Verde e Aarhus relacionado com hip hop, migração, políticas culturais urbanas e estudos queer. É autor de Ideologies of Marginality in Brazilian Hip Hop(Palgrave 2008) e Cape Verde, Let’s Go: Creole Rappers and Citizenship in Portugal (University of Illinois Press 2015). O seu livro mais recente, Sobrevivendo no Inferno (Bloomsbury 2021, em inglês), é uma coleção de contos etnográficos baseados na sua experiência no Brasil e nas letras do álbum homónimo do lendário grupo de rap brasileiro Racionais MCs.', email: '// dpardue@cas.au.dk'},
+        {name: 'TALJA BLOKLAND', occupation: 'consultora', imagePath: '{% static "assets/img/talja_blokland.png" %}', bio: 'A Professora Talja Blokland é uma socióloga urbana que trabalhou em várias universidades holandesas, na Universidade de Manchester e ocupou cargos de visita na Universidade de Yale e na New School University. Desde 2009, ocupa a cadeira de Sociologia Urbana e Regional na Universidade Humboldt de Berlim. As suas publicações incluem Urban Bonds (Polity, 2003), Creating the Unequal City (editado com C. Giustozzi, D. Krüger e H. Schilling, Ashgate, 2016), Community as Urban Practice (Polity, 2017), e vários artigos sobre raça e etnia na cidade, bairros pobres, violência urbana, gentrificação, classes médias urbanas e relações de vizinhança e interacções quotidianas.', email: '// talja.blokland@hu-berlin.de'},
+        {name: 'VICTORIA GOMEZ', occupation: 'consultora', imagePath: '{% static "assets/img/victoria_gomez.png" %}', bio: 'M. Victoria Gómez é Professora Titular de Sociologia na Universidade Carlos III e docente do Departamento de Análise Social em cursos de graduação e pós graduação. Tem um doutoramento em Sociologia pela Universidade de Stirling (Escócia) e um mestrado em Estudos de Planeamento Urbano pela Universidade de Oxford Brookes. Foi vice-decana de Sociologia na Universidade Carlos III e membro do comité coordenador da Rede Europeia de Investigação 37 (Sociologia Urbana) da ESA (Associação Europeia de Sociologia).  Foi investigadora visitante na Universidade de Glasgow (Reino Unido), na Universidade de Jyväskylä (Finlândia) e na Università degli Studi di Bari (Itália). Publicou em prestigiadas revistas internacionais e participou em livros e conferências internacionais. Os seus actuais interesses de investigação incluem a pertença local, a vulnerabilidade, a sustentabilidade urbana e a dinâmica dos bairros.', email: '// mgomez@polsoc.uc3m.es'}   
+    ]
+
+    for(let i=0; i<imagensScroll.length; i++) {
+        imagensScroll[i].addEventListener('mouseover', (e)=> {        
+        myname.textContent = investigators[i].name
+        occupation.textContent = investigators[i].occupation
+        myphoto.src = investigators[i].imagePath
+        mytext.textContent = investigators[i].bio
+        myemail.textContent = investigators[i].email
+    })
+    }    
+       
+
+ </script>
+ <script src="{% static '/js/header.js' %}"></script>       
+</body>
+</html>

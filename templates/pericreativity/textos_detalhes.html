@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header-about.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">            
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/article-texts-details.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/footer-about.css' %}"> 
+    <link rel="stylesheet" href="{% static '/styles/css/dropdown-button.css' %}">  
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+
+    <title>Sobre</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">            
+                
+                <a href="{% url 'index' %}"><img src="{% static '/assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>
+                                <a href="{% url 'galeria' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'visual' %}">VISUAL</a> 
+
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div> 
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>    
+    <section>
+        <div class="azul">
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>
+            <h1>TEXTOS&nbsp;</h1>                         
+        </div>
+        <article>
+            
+            <div class="title_title_details">
+                <h2>VISITA AO BAIRRO DA TORRE EM CASCAIS</h2>
+                <h3>Otávio Raposo, Lígia Ferro, Pedro Varela, Beatriz Lacerda e Mateus Sadock</h3>
+            </div>  
+            
+            <p>
+                21 de setembro de 2023<br><br>                
+Chegámos ao bairro e ao espaço do projeto Take.it pelas 12h30. Pediram-nos que fossemos buscar o almoço à casa da “Mamã”. Deslocámo-nos ao bloco onde vive com o seu filho Lenin, e ambos nos disseram que o manjar estava já pronto a carregar. A cachupa, rica e deliciosa, preparada por “Mamã”, foi levada e servida na antiga escola primária que agora serve de sede do projeto Take.it.<br><br>
+O espaço é muito bem organizado, dividido por diferentes atividades: estantes com uma coleção eclética de livros, secretária e área administrativa, equipamento desportivo, painel com divulgação de ofertas de emprego por áreas, cartazes vários, com iniciativas do bairro ou de natureza preventiva, cozinha equipada, sofás, matraquilhos e um estúdio de música. Destacava-se um cartaz: “Porque se hoje fui eu, amanhã poderás ser tu!”, seguido de instruções de apoio para lidar com violência policial. <br><br>
+Almoçámos na companhia de Elber, Lenin e mais jovens foram surgindo para se servirem da panela familiar que centralizava o convívio no Take.it. A “Mamã” veio depois ter connosco, acompanhada de uma menina de dois anos que estava ao seu cuidado, e convivemos no pátio exterior, onde ela mostrou a horta comunitária do bairro. Das suas canas-de-açúcar cortou pequenos pedaços que dividiu entre os presentes. Pelas 14h30 regressou o Robz, morador do bairro e técnico do Take.it, para nos levar num dos já famosos tours de street art da Torre. <br><br>
+A história dos murais de street art na Torre teve início no ano de 2016. Segundo o Robz esta iniciativa começou numa parceria entre os poderes locais e os jovens do bairro, por via de um mapeamento dos locais a serem revitalizados. Convidaram-se artistas para fazer intervenções de street art em fachadas dos edifícios a partir de um diálogo com os moradores, a história do bairro e as vivências locais. Em 2018, os mesmos jovens estrearam-se no Festival do Infinito, onde todos anos, são realizadas oito intervenções em oito dias.<br><br>
+Durante quase duas horas, Robz prosseguiu com histórias do projeto, do festival e do próprio bairro. Desde as tensões geracionais que se têm diluído no envolvimento coletivo dos murais, até às novas formas de interação com o município. Desde então, as dinâmicas de sociabilidade e os processos de identificação local sofreram transformações significativas, com o aumento da valorização exterior do território e efeitos da gentrificação urbana.<br><br>
+São já várias as edições do Festival Infinito com novos murais em constante atualização, e em diálogo com os modos de vida da Torre e de outros lugares que se têm juntado, através da rede crescente e internacional de artistas e público, que têm tomado conhecimento destas dinâmicas.<br><br>
+
+“Tem sido um processo de corresponsabilização”, diz Robz, onde a participação e decisão dos jovens moradores é tão importante como o seu empenho e compromisso. Como ele refere “Se antes éramos a malta que vandalizava o bairro, agora somos quem o regenera”, ao ressaltar a importância do envolvimento dos jovens nas iniciativas locais, como recentemente ocorrido na reforma do parque infantil. Nestes anos de intervenção artística e comunitária com aprendizagens internas, o valor da participação coletiva e auto-organizada dos moradores é reveladora de novos caminhos de emancipação, em que os jovens das periferias são atores centrais da mudança.<br><br>
+
+Esta primeira incursão de vários elementos da equipa alargada do PERICREATIVITY, permitiu entender dinâmicas de participação dos jovens desta periferia de Lisboa. As iniciativas de arte urbana têm uma centralidade neste processo, alavancando relações com a Câmara Municipal e outros protagonistas locais. Ficámos com vontade de voltar para ver o desenvolvimento dos projetos destes jovens. A equipa de Lisboa regressará muito em breve!<br><br>
+
+
+Contato para a visita de street art via instagram:<br>
+@rvarela7 / @inifinitofestival<br><br>
+            </p>
+            <!-- <img src="blog/img/imagem_textos_detalhes.png" alt=""> -->
+            
+            <div class="hashtags">
+                #cidades&nbsp;&nbsp; #quebradas&nbsp;&nbsp; #bairros&nbsp;&nbsp; #aml&nbsp;&nbsp; #takeit<br><span></span>
+            </div>
+                
+                <!-- <p><em>TÍTULO 1</em><br><emm>Autoria</emm><br><br>Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma. Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re  laciis acerferum de sant voluptas et ma.
+                    <br><br><legenda>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo. 
+                    <br><br>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.</legenda>
+                </p>
+                <p><br><br><br>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.
+                    <br><br><img style="height: 270px;" src="blog/img/visual_imagem_mauro.png" alt="">
+                    <br><br>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.<br><span></span>
+                </p>                                                      -->
+                
+                
+                
+        </article>
+    </section>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static '/assets/img/fct_preto.png' %}" width="105">
+                <img src="{% static '/assets/img/iscte_preto.png' %}" alt="" width="80">
+                <img src="{% static '/assets/img/cies_preto.png' %}" alt="" width="125">
+                <img src="{% static '/assets/img/flup_preto.png' %}" alt="" width="95">
+                <img src="{% static '/assets/img/isup_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/nova_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/cics_preto.png' %}" alt="" width="90">
+                <img src="{% static '/assets/img/nova_fcsh_preto.png' %}" alt="" width="100">
+                <img src="{% static '/assets/img/inet_preto.png' %}" alt="" width="100">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(blog/img/black_lupa.png); display: none">    
+                <div class="redes_sociais">
+                    <img src="{% static '/assets/img/instagram_logo_preto.png' %}" alt="">
+                    <img src="{% static '/assets/img/facebook_logo_preto.png' %}" alt="">
+                    <img src="{% static '/assets/img/x_logo_preto.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static '/js/header.js' %}"></script>      
+</body>
+</html>

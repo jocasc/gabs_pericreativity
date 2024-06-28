@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static '/styles/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/header-about.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">            
+    <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/article-visual-detalhes.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/css/footer-about.css' %}">   
+    <link rel="stylesheet" href="{% static '/styles/css/dropdown-button.css' %}">    
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+
+    <title>Visual/Detalhes</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static '/assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <div class="dropdown">
+                            <button class="dropbtn">SOBRE</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'pericreativity' %}">PERICREATIVITY</a>
+                                <a href="{% url 'equipa' %}">EQUIPA</a>                                
+                                <a href="{% url 'notas' %}">GALERIA DO PROJETO</a>
+                            </div>
+                        </div>                        
+                        <a href="{% url 'visual' %}">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'notas' %}">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>    
+    <section>
+        <div class="azul">
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>
+            <h1>VISUAL&nbsp;</h1>                         
+        </div>
+
+        <div class="container">
+            <!-- <h2>Carousel Example</h2>   -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+              </ol> -->
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="{% static '/assets/img/destaque_visual.png' %}" alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="{% static '/assets/img/takeit_01.png' %}" alt="Chicago" style="width:100%;">
+                  </div>
+          
+                <div class="item">
+                  <img src="{% static '/assets/img/takeit_02.png' %}" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="{% static '/assets/img/takeit_03.png' %}" alt="New york" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="{% static '/assets/img/takeit_04.png' %}" alt="New york" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="{% static '/assets/img/takeit_05.png' %}" alt="New york" style="width:100%;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+          
+
+        <article>
+            <!-- <img src="{% static '/assets/img/destaque_visual.png' %}" alt="" >   -->
+                <div class="card-details">
+                    <p>VISITA AO PROJETO TAKE.IT, NO BAIRRO DA TORRE</p>
+                    <p>Texto e fotos: equipa PERICREATIVITY</p>
+                    <p>Entre os dias 20 e 21 de setembro de 2023, a equipa do PERICREATIVITY reuniu-se no Instituto Universitário de Lisboa (ISCTE-IUL) para discutir e mapear as premissas teórico-metodológicas que motivaram o projeto: as juventudes e os seus campos de atuação político-artística, os territórios frequentemente relegados e representados pelo estigma, e as políticas públicas que, ora incentivam, ora domesticam, a autonomia criativa juvenil destas áreas periféricas. Foi ainda possível conhecer um dos territórios escolhidos para integrar esta investigação. Através de uma visita orientada por Robz, a equipa teve oportunidade de conhecer as transformações sociopolíticas vividas no Bairro da Torre, a partir da intervenção artística dos jovens residentes, motivados pela associação juvenil “Somos Torre” e o projeto Escolhas “Take.it”.<br><span></span></p>
+                                        
+                </div>                                                 
+        </article>
+    </section>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div class="logos_e_redes_sociais">                    
+            <div class="logos_suporte">
+                <img src="{% static 'assets/img/fct_preto.png' %}" width="105">
+                <img src="{% static 'assets/img/iscte_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/cies_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/flup_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/isup_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/nova_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/cics_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/nova_fcsh_preto.png' %}" alt="" width="100">
+                <img src="{% static 'assets/img/inet_preto.png' %}" alt="" width="100">
+            </div>
+            <div class="input_e_redes_sociais">
+                <input type="text" placeholder="pesquisar..." style="background-image: url(assets/img/black_lupa.png);display:none">    
+                <div class="redes_sociais">
+                    <img src="{% static 'assets/img/instagram_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/facebook_logo_preto.png' %}" alt="">
+                    <img src="{% static 'assets/img/x_logo_preto.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static '/js/header.js' %}"></script>      
+</body>
+</html>
