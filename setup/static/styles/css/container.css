@@ -1,44 +1,45 @@
-
+.relativo {
+  position: relative;
+  /* background-color: yellow;  */
+  height: 30vh;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .azul {        
-    background-color: var(--black-color);
-    /* background-color: green; */
+    background-color: var(--black-color);    
     display: flex;
     font-family: var(--font-title-anisette);
     font-weight: 700;
     font-style: normal;
-    justify-content: flex-start;
-    /* margin-bottom: -80px;  */
+    justify-content: flex-start;    
     border-bottom: 1px solid black;
     overflow: hidden;    
-    width: 100vw; 
-    
-    
+    width: 100vw;     
   }
 
   .azul h1 {
     color: red;   
     color: var(--gray-color);         
-    font-size: 65vw;
+    font-size: 65vw;    
   }
 
   h1 {
-    animation: move-rtl 20000ms linear infinite;
-    /* font-size: 800px; */    
+    animation: move-rtl 20000ms linear infinite;    
     letter-spacing: 10px;
-    text-transform: uppercase;    
+    text-transform: uppercase;   
+    /* animation-play-state: paused;  */
+    /* background-color: green; */
+    
   }
 
   .container {    
     position:absolute; 
-    left: 25vw; 
-    /* top: 1405px; */
-    /* bottom: -820px; */
-    /* top: 145%; */
-    /* height: 25vh; */
-    /* background-color: yellowgreen; */
-    /* z-index: 1; */
-    /* margin-top: -250px; */
+    left: 25vw;     
+    /* background-color: red; */
+    
+    
     
   }
 
@@ -72,12 +73,13 @@
 
 
 .mySlides {
-    display:none;
+    display:none;    
 }
 
 .w3-animate-left {
   animation:animateright 0.4s;
   position:relative;
+  /* animation-play-state: paused; */
 }
 
 @keyframes animateright {
@@ -99,14 +101,29 @@
     width: 130px;
 }
 
-/* @media screen and (max-width:380px) {
+/* @media screen and (max-width:430px) {
   .container {    
-    top: 1270%;
+    background-color: aqua;
+  }
+
+  .azul {
+    
     background-color: green;
   }
 
 
-
-
-
 } */
+
+@media screen and (max-width: 430px){
+  .carrossel img {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {        
+    left: 17vw; 
+  }
+
+  
+}

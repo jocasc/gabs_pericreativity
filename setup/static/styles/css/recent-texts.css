@@ -1,11 +1,10 @@
 .recent {    
-    /* background-color: brown; */
     background-color: var(--black-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     /* margin-top: 70px;  
     margin-bottom: 70px;   */
-    padding-top: 70px;
+    padding-top: 350px;
     padding-bottom: 70px;
     /* background-color: chocolate; */
 }
@@ -98,6 +97,9 @@
 
 
 @media screen and (max-width:1080px){
+    .recent {
+        padding-top: 250px;
+    }
 
     .recent-texts {
         width: 80vw;
@@ -154,7 +156,7 @@
 
 
     .recent {
-        margin-top: 0px;
+        padding-top: 180px;
     }
 
     
@@ -194,7 +196,7 @@
 
 @media screen and (max-width:430px){
     .recent {
-        margin-top: 0px;
+        padding-top: 100px;
     }
     .recent-texts__title {
         color: var(--gray-color);

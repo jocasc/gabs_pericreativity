@@ -7,9 +7,8 @@ var burger = document.getElementById('hamburguer')
 const calendar = document.getElementsByClassName('calendar-year')
 const calendarEvents = document.getElementsByClassName('calendar-events') 
 
+
 // console.log(calendar[0].innerHTML)
-
-
 for (var i=0; i<calendar.length; i++) {
     calendar[i].addEventListener('click', (e)=> {        
 

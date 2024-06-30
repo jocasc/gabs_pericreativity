@@ -11,31 +11,57 @@ var palavra = document.querySelector('.azul')
 const viewportWidth = window.innerWidth;
 
 
-if(viewportWidth >= 1080){
-  container.style.top = (palavra.offsetTop) + 250 + 'px'
-}
-else if(viewportWidth >= 430 && viewportWidth < 1080){
-container.style.top = (palavra.offsetTop) + 150 + 'px'
-} else  {
-container.style.top = (palavra.offsetTop) + 50 + 'px'
-}
+// screen.orientation.addEventListener("change", (event) => {
+//   const type = event.target.type;
+//   const angle = event.target.angle;
+//   console.log(`ScreenOrientation change: ${type}, ${angle} degrees.`);
+//   if (event.target.angle == '0'){
+//     palavra.children[0].style.animationPlayState = 'paused'
+//   } else {
+//     palavra.children[0].style.animationPlayState = 'running'
+//   }
+// });
+
+// window.addEventListener('orientationchange', () => {
+
+// if (screen.orientation.type == 'landscape-primary' || screen.orientation.type == 'landscape-secondary') {
+//   palavra.children[0].style.animationPlayState = 'paused'
+//   palavra.children[1].style.animationPlayState = 'paused'
+//   palavra.children[2].style.animationPlayState = 'paused'
+//   palavra.children[3].style.animationPlayState = 'paused'
+//   palavra.children[4].style.animationPlayState = 'paused'
+//   alert('em pe')
+// } else {
+//   palavra.children[0].style.animationPlayState = 'running'
+// palavra.children[1].style.animationPlayState = 'running'
+// palavra.children[2].style.animationPlayState = 'running'
+// palavra.children[3].style.animationPlayState = 'running'
+// palavra.children[4].style.animationPlayState = 'running'
+// alert('deitado')
+// }
+
+
+  // if(viewportWidth >= 1080){
+  //   container.style.top = (palavra.offsetTop) + 250 + 'px'
+  // }
+  // else if(viewportWidth >= 430 && viewportWidth < 1080){
+  // container.style.top = (palavra.offsetTop) + 150 + 'px'
+  // } else  {
+  // container.style.top = (palavra.offsetTop) + 50 + 'px'
+  // }
+// })
+
+// if(viewportWidth >= 1080){
+//   container.style.top = (palavra.offsetTop) + 250 + 'px'
+// }
+// else if(viewportWidth >= 430 && viewportWidth < 1080){
+// container.style.top = (palavra.offsetTop) + 150 + 'px'
+// } else  {
+// container.style.top = (palavra.offsetTop) + 50 + 'px'
+// }
 
 // redefine a posição das imagens de acordo com o tamanho da tela
-window.addEventListener("resize", () => {
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
-  // container.style.top = (palavra.offsetTop) + 200 + 'px'
-  console.log(`largura window: ${viewportWidth}`)
-  if(viewportWidth >= 1080){
-    container.style.top = (palavra.offsetTop) + 250 + 'px'
-  }
-  else if(viewportWidth >= 430 && viewportWidth < 1080){
-  container.style.top = (palavra.offsetTop) + 150 + 'px'
-} else  {
-  container.style.top = (palavra.offsetTop) + 50 + 'px'
-}
 
-});
 
 // posiciona as imagens em cima do texto
 // if(viewportWidth > 430 && viewportWidth <= 1080){
@@ -59,30 +85,32 @@ var english = document.getElementById('english')
 
 
 portuguese.addEventListener('click', ()=> {
-  if(portuguese.className != 'enable'){
-      portuguese.classList.toggle('enable')  
-      english.classList.toggle('enable')
-      linksMenu.children[0].textContent = 'SOBRE'    
-      linksMenu.children[1].textContent = 'VISUAL' 
-      linksMenu.children[2].textContent = 'TEXTOS'
-      linksMenu.children[3].textContent = 'AGENDA'
-      linksMenu.children[4].textContent = 'FAZ PARTE'
-      footer.textContent = 'Rodapé. Logos + Redes Sociais.'
+  alert('Em construção')
+  // if(portuguese.className != 'enable'){
+  //     portuguese.classList.toggle('enable')  
+  //     english.classList.toggle('enable')
+  //     linksMenu.children[0].textContent = 'SOBRE'    
+  //     linksMenu.children[1].textContent = 'VISUAL' 
+  //     linksMenu.children[2].textContent = 'TEXTOS'
+  //     linksMenu.children[3].textContent = 'AGENDA'
+  //     linksMenu.children[4].textContent = 'FAZ PARTE'
+  //     footer.textContent = 'Rodapé. Logos + Redes Sociais.'
 
-  }    
+  // }    
 })
 
 english.addEventListener('click', ()=> {
-  if(english.className != 'enable'){
-    english.classList.toggle('enable')
-    portuguese.classList.toggle('enable')
-    linksMenu.children[0].textContent = 'ABOUT'
-    linksMenu.children[1].textContent = 'VISUAL'
-    linksMenu.children[2].textContent = 'TEXTS'
-    linksMenu.children[3].textContent = 'SCHEDULE'
-    linksMenu.children[4].textContent = 'GET INVOLVED'
-    footer.textContent = 'Footer. Logos + Social Midias.'
-  }  
+  alert('Under construction')
+  // if(english.className != 'enable'){
+    // english.classList.toggle('enable')
+    // portuguese.classList.toggle('enable')
+    // linksMenu.children[0].textContent = 'ABOUT'
+    // linksMenu.children[1].textContent = 'VISUAL'
+    // linksMenu.children[2].textContent = 'TEXTS'
+    // linksMenu.children[3].textContent = 'SCHEDULE'
+    // linksMenu.children[4].textContent = 'GET INVOLVED'
+    // footer.textContent = 'Footer. Logos + Social Midias.'
+  // }  
 })
 
 
@@ -91,6 +119,7 @@ var sticky = menu.offsetTop
 
 window.addEventListener('scroll', ()=> {
     // console.log(window.scrollY + ' and ' + sticky)
+
     
     if (window.scrollY >= 350) {
       // console.log(window.scrollY)
