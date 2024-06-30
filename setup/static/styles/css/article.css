@@ -1,6 +1,6 @@
 .article {
     background-color: var(--black-color);        
-    border-bottom: 1px solid black;    
+    /* border-bottom: 1px solid black;     */
     color: var(--gray-color);
     font-family: var(--font-text-adelle);
     font-weight: 300;
@@ -8,7 +8,9 @@
     font-size: clamp(1.2rem, 1.4vw, 1.5rem); /* min, preferred, max */    
     width: 100vw;
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;  
+    margin-bottom: 352px;  
+       
 }
 
 article p:nth-child(1) {
@@ -48,19 +50,35 @@ article span {
 
 }
 
-article a:visited, a:link {
-  text-decoration: none;
-  color: var(--black-color);
+.article span {
+  padding-bottom: 120px;
 }
+
+.article a {
+  text-decoration: none;
+  color: var(--principal-color);
+}
+
+
 
 button a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--principal-color);
+}
+
+@media screen and (max-width:1190px) {
+  .article span {
+    padding-bottom: 120px;
+  }  
 }
 
 
-
 @media screen and (max-width:1080px) {
+
+  .article {
+    margin-bottom: 220px;
+  }
+  
 
   article span {
     font-size: 1rem;
@@ -84,8 +102,14 @@ button a {
 
 @media screen and (max-width:798px) {
     .article {                
-        font-size: 1.1rem;        
+        font-size: 1.1rem;  
+        margin-bottom: 150px;      
     }
+
+    .article span {
+      padding-bottom: 100px;
+    }
+
   
     .article p {                
         font-size: 1rem;
@@ -96,16 +120,20 @@ button a {
     article p:nth-child(1) {
       width: 70vw;      
     }
+
+
 }
 
 
 @media screen and (max-width:430px) {
 
+  .article span {
+    padding-bottom: 150px;
+  }
+
   .article {
     background-color: var(--black-color);        
-    
-    
-        
+    margin-bottom: 0px;        
 }
     article p:nth-child(1) {
       background-color: var(--black-color);

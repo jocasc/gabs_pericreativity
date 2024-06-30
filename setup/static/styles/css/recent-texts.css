@@ -4,7 +4,7 @@
     flex-direction: column;    
     /* margin-top: 70px;  
     margin-bottom: 70px;   */
-    padding-top: 350px;
+    padding-top: 500px;
     padding-bottom: 70px;
     /* background-color: chocolate; */
 }
@@ -98,7 +98,7 @@
 
 @media screen and (max-width:1080px){
     .recent {
-        padding-top: 250px;
+        padding-top: 350px;
     }
 
     .recent-texts {
@@ -156,7 +156,7 @@
 
 
     .recent {
-        padding-top: 180px;
+        padding-top: 250px;
     }
 
     
@@ -196,7 +196,7 @@
 
 @media screen and (max-width:430px){
     .recent {
-        padding-top: 100px;
+        padding-top: 150px;
     }
     .recent-texts__title {
         color: var(--gray-color);

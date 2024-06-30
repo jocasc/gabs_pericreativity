@@ -10,7 +10,8 @@
 }
 
 body {
-    background-color: #FECE00;
+    background-color: #FECE00;        
+    /* background-color: #FECE00; */
     /* background-color: var(--black-color); */
     /* background-color: cadetblue; */
 }

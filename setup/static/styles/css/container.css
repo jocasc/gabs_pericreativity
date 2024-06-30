@@ -1,10 +1,9 @@
-.relativo {
-  position: relative;
-  /* background-color: yellow;  */
-  height: 30vh;
+.relativo {  
+  position: relative;  
+  height: 10vh;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .azul {        
