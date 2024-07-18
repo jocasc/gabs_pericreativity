@@ -48,6 +48,8 @@ const calendarDescription = document.getElementsByClassName('calendar-events-des
 const agendaMoreMore = document.getElementsByClassName('agenda__more-more')
 const agendaMoreOthers = document.getElementsByClassName('agenda__more-others')
 
+const knowMore = document.getElementsByClassName('saiba-mais')
+const book = document.getElementsByClassName('livro-de-resumo')
 
 const linksAgendaMore = [
     'https://xii-congresso-aps.eventqualia.net/pt/2023/inicio/',
@@ -61,6 +63,8 @@ const linksAgendaOthers = ['https://eu-central-1.linodeobjects.com/evt4-media/do
 const resumeBook = ['LIVRO DE RESUMOS', '', '', 'LIVRO DE RESUMOS']
 
 
+
+
 for(let i=0; i<calendarTitles.length; i++){
         
         
@@ -68,10 +72,23 @@ for(let i=0; i<calendarTitles.length; i++){
     agendaTitles.innerHTML = calendarTitles[i].innerHTML
     agendaDetails.innerHTML = calendarDescription[i].innerHTML
 
+
     
-    agendaMoreMore[0].children[0].href = linksAgendaMore[i]         
-    agendaMoreOthers[0].children[0].href = linksAgendaOthers[i]
-    agendaMoreOthers[0].children[0].innerHTML = resumeBook[i]
+    if(knowMore[i].innerHTML != ''){
+        agendaMoreMore[0].children[0].href = knowMore[i].innerHTML
+        agendaMoreMore[0].children[0].classList.remove('deactived-button')
+    } else {
+        agendaMoreMore[0].children[0].classList.add('deactived-button')
+    }
+    
+    if(book[i].innerHTML != ''){
+        agendaMoreOthers[0].children[0].href = book[i].innerHTML
+        agendaMoreOthers[0].children[0].classList.remove('deactived-button')
+    } else {
+        agendaMoreOthers[0].children[0].classList.add('deactived-button')
+    }
+    
+    // agendaMoreOthers[0].children[0].innerHTML = resumeBook[i]
     
     
     
@@ -88,4 +105,22 @@ for(let i=0; i<calendarTitles.length; i++){
     })
 }
 
-    
+
+function bookButtons() {
+if(knowMore[i].innerHTML != ''){
+    agendaMoreMore[0].children[0].href = knowMore[calendarTitles.length-1].innerHTML
+    agendaMoreMore[0].children[0].classList.remove('deactived-button')
+} else {
+    agendaMoreMore[0].children[0].classList.add('deactived-button')
+}
+
+if(book[i].innerHTML != ''){
+    agendaMoreOthers[0].children[0].href = book[calendarTitles.length-1].innerHTML
+    agendaMoreOthers[0].children[0].classList.remove('deactived-button')
+} else {
+    agendaMoreOthers[0].children[0].classList.add('deactived-button')
+}
+
+}
+
+const myTimeout = setTimeout(bookButtons, 500);

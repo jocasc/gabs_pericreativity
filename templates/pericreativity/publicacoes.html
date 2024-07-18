@@ -79,29 +79,29 @@
         </div>
         <p class="titulo">PUBLICAÇÕES</p>
         <article>
+            {% for publi in posts %}
             <div class="card-textos">
-                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
-                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
+                <p><a href="{{ publi.link }}" target="_blank">{{ publi.title }}</a></p>
+                <p><a href="{{ publi.link }}" target="_blank">{{ publi.credits }}</a></p>
+                <p><a class="note_type" href="{{ publi.link }}" target="_blank">{{ publi.publication.html|truncatechars:264|safe }}</a></p>
             </div>
-            <div class="card-textos">
-                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
-                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
-            </div>
-            <div class="card-textos">
-                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
-                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
-            </div>            
-            <div class="card-textos">
-                <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
-                <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti ut.</p>
-            </div>            
-        </article>
-        <div class="paginacao"><p><em>1</em> 2 3 4</p></div>
+            {% endfor %}            
+        </article>        
     </section>
+    <div class="paginacao">
+                
+        {% if page.has_previous %}
+        <a href="?page={{ page.previous_page_number }}"> << </a>
+        {% endif %}     
+        <!-- <span class="current">
+        Página {{ page.number }} de {{ page.paginator.num_pages }}.
+        </span> -->
+        <span>{{ page.number }} de {{ page.paginator.num_pages }}</span>
+        {% if page.has_next %}        
+        <a href="?page={{ page.next_page_number }}">>></a>
+        {% endif %}
+        
+    </div>
     <div class="hashtags">
         <p><i>#</i>NUVEMDETEMAS</p>
         #cidades&nbsp;&nbsp; #quebradas&nbsp;&nbsp; #bairros&nbsp;&nbsp; #aml&nbsp;&nbsp; #takeit&nbsp;&nbsp; #periferias

@@ -9,11 +9,10 @@
     width: 100vw;
     display: flex;
     flex-direction: column;  
-    margin-bottom: 352px;  
-       
+    margin-bottom: 352px;      
 }
 
-article p:nth-child(1) {
+/* article p:nth-child(1) {
     background-color: var(--black-color);
     line-height: 1.75;  
     font-weight: 600;  
@@ -23,9 +22,21 @@ article p:nth-child(1) {
     padding-top: 70px;  
     padding-bottom: 30px;  
     font-size: 1.4rem;    
+} */
+
+.introduce {
+  background-color: var(--black-color);
+  line-height: 1.75;  
+  font-weight: 600;  
+  width: 50vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 70px;  
+  padding-bottom: 30px;  
+  font-size: 1.4rem;
 }
 
-article p:nth-child(2) {
+/* article p:nth-child(2) {
   background-color: var(--black-color);
   line-height: 2;    
   width: 80vw;
@@ -33,9 +44,26 @@ article p:nth-child(2) {
   padding-right: 10vw;    
   padding-bottom: 30px;  
   font-size: 1.2rem;  
-  
-  
+} */
+
+.introduce-body p {
+  font-family: var(--font-text-adelle);
+  font-weight: 300;
+  font-style: normal;
+  color: var(--gray-color);
+  background-color: var(--black-color);
+  line-height: 2;    
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;    
+  padding-bottom: 30px;  
+  font-size: 1.2rem;  
 }
+
+.article span {
+  padding-bottom: 120px;
+}
+
 
 article span {
   font-size: 1rem;
@@ -49,10 +77,13 @@ article span {
   color: var(--principal-color);
 
 }
-
-.article span {
-  padding-bottom: 120px;
+.introduce-body span {
+  font-family: var(--font-text-adelle);
+  font-weight: 300;
+  font-style: normal;
+  padding: 0 0 0 0;
 }
+
 
 .article a {
   text-decoration: none;
@@ -84,17 +115,17 @@ button a {
     font-size: 1rem;
   }
 
-  article p:nth-child(1) {    
+  /* article p:nth-child(1) {     */
+  .introduce {
     width: 60vw;
     font-size: 1.4rem;  
    
   }
 
 
-  article p:nth-child(2) {    
-     
-    font-size: 1.2rem;  
-   
+  /* article p:nth-child(2) {  */
+  .introduce-body p {        
+    font-size: 1.2rem;     
   }
 
 }
@@ -112,12 +143,13 @@ button a {
 
   
     .article p {                
-        font-size: 1rem;
+        /* font-size: 1rem; */
         padding-top: 60px;
         width: 80vw;
     }
 
-    article p:nth-child(1) {
+    /* article p:nth-child(1) { */
+    .introduce {
       width: 70vw;      
     }
 
@@ -135,7 +167,8 @@ button a {
     background-color: var(--black-color);        
     margin-bottom: 0px;        
 }
-    article p:nth-child(1) {
+    /* article p:nth-child(1) { */
+    .introduce {
       background-color: var(--black-color);
       line-height: 1.5;  
       font-weight: 600;  
@@ -147,7 +180,8 @@ button a {
       font-size: 1.2rem;    
     }
 
-    article p:nth-child(2) {
+    /* article p:nth-child(2) { */
+    .introduce-body p {
       background-color: var(--black-color);
       line-height: 1.5;    
       width: 80vw;
@@ -157,11 +191,11 @@ button a {
       font-size: 1rem;        
     }
   
-    .article p {
+    /* .article p {
       font-size: 0.9rem;      
       line-height: 1.5;
       padding-top: 40px;              
-    }
+    } */
 
 
     

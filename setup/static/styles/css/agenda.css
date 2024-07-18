@@ -1,3 +1,7 @@
+.deactived-button {
+    display: none;
+}
+
 .agenda__more-more a:link {
     text-decoration: none;      
 }

@@ -79,39 +79,79 @@
             
             
             </div>
-        <div class="article">
-
+            
+        <!-- {% for year in years %}
+        {{ year }}
+            {% for dado in dados %}
+            {% if dado.date_event__year == year %}
+            <p>{{dado.title}}</p>
+            {% endif %}
+            {% endfor %}
+        {% endfor %} -->
+        
+        <!-- {{ i.event.html|safe }} -->
+        
+        <div class="article">            
             <div class="calendar">
+                
+                {% for year in years %}                
                 <div class="calendar-content">                    
-                    <button class="calendar-year active">2023 <span>+</span></button>
+                    <button class="calendar-year active">{{ year }} <span>+</span></button>
                     <div class="calendar-events">
+                        <!-- {% for dado in teste %} -->
+                            <!-- {% if dado.date_event__year == year %} -->
+                        <!-- <div>
+                            <p class="calendar-events-title">{{ dado.title }} meu titulo</p>
+                            <p class="calendar-events-description">{{ dado.event }} minha descricao</p>                           -->
+                            <!-- <p class="calendar-events-title">Comunicação no XII Congresso Português de Sociologia da APS</p>
+                            <p class="calendar-events-description">Entre os dias 4 e 6 de abril de 2023, a equipa do PERICREATIVITY participou no “XII Congresso Português de Sociologia” da Associação Portuguesa de Sociologia (APS), na Faculdade de Economia da Universidade de Coimbra (FE-UC), Portugal, com a comunicação “Criatividades periféricas numa sociedade atravessada por processos de polarização: das desigualdades às oportunidades”.</p>                             -->
+                        <!-- </div> -->
+                            <!-- {% endif %} -->
+                        <!-- {% endfor %} -->
+
+                        {% for dado in teste %}
+                        
+                        {% if dado.date_event.year == year %}                                                
                         <div>
-                            <p class="calendar-events-title">Comunicação no XII Congresso Português de Sociologia da APS</p>
-                            <p class="calendar-events-description">Entre os dias 4 e 6 de abril de 2023, a equipa do PERICREATIVITY participou no “XII Congresso Português de Sociologia” da Associação Portuguesa de Sociologia (APS), na Faculdade de Economia da Universidade de Coimbra (FE-UC), Portugal, com a comunicação “Criatividades periféricas numa sociedade atravessada por processos de polarização: das desigualdades às oportunidades”.</p>                            
+                            <p class="calendar-events-title"> {{ dado.title}}</p>
+                            
+                            <p class="calendar-events-description">{{ dado.event}}</p>  
+                                                          
+                            <p class="saiba-mais" style="display: none;">{{dado.know_more}}</p>
+                                                        
+                            <p class="livro-de-resumo" style="display: none;">{{dado.book}}</p>
+                                                                                                       
                         </div>
-                        <div>
-                            <p class="calendar-events-title">Comunicação na ESA RN27 Mid-Term Conference</p>
-                            <p class="calendar-events-description">Entre os dias 21 e 22 de setembro de 2023, a equipa do PERICREATIVITY participou ESA RN37 Mid-Term Conference:  Territories, communities and sustainability: views from Southern Europe, na Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa (FCSH-UNL) Portugal. Foi aqui apresentada a comunicação “The transformation of a community through culture and artistic practice in the Torre neighbourhood, metropolitan area of Lisbon”.</p>
-                        </div>
-                        <div>
-                            <p class="calendar-events-title">Diálogo com o trabalho da investigadora Adrienne Lee Aterberry (SUNY)</p>
-                            <p class="calendar-events-description">Em novembro de 2023, a investigadora Adrienne Lee Aterberry, da Universidade do Estado de Nova Iorque (SUNY), foi visitante no Instituto de Sociologia da Universidade do Porto (IS-UP), com um programa de atividades intitulado “Growing up in the 21st Century: Unpacking the Facets of Contemporary Youth”. A 23 de novembro, a equipa do PERICREATIVITY participou na mesa redonda “Youth: migration, racism and ethnicities”, com a comunicação “Youth public policy in Portugal: Peripheral (im)possibilities”.</p>    
-                        </div>
-                        <div>
+                        {% endif%}
+                        {% endfor %}
+                        <!-- <div>
                             <p class="calendar-events-title">Participação na conferência Youth Action Culture</p>
                             <p class="calendar-events-description">Entre os dias 13 e 14 de novembro 2023, a equipa do PERICREATIVITY participou no Congresso Internacional “Youth Action Culture – Rumo à Democracia Cultural”, realizada nas Caldas da Rainha, Portugal, onde apresentou o projeto no painel “Projetos Inspiradores I: ARTivismo, política, cidadania e direitos culturais”. O encontro foi organizado colaborativamente entre o Plano Nacional das Artes (PNA), a Rede Europeia de Observatórios no Campo das Artes e da Educação Cultural (ENO), a Fundação Calouste Gulbenkian, a Escola Superior de Artes e Design das Caldas da Rainha (ESAD.CR) (Cátedra UNESCO em “Gestão das Artes e da Cultura, Cidades e Criatividade” do Instituto Politécnico de Leiria) e deu seguimento à publicação da Carta de Porto Santo (2021).</p>    
-                        </div>
+                        </div> -->
                     </div>
                 </div>
+                                
+            {% endfor %}
             </div>
 
             <div class="agenda">
-                <h2 class="agenda-title"> participação na conferência youth action culture</h2>
-                <p class="agenda-details">Entre os dias 13 e 14 de novembro 2023, a equipa do PERICREATIVITY participou no Congresso Internacional “Youth Action Culture – Rumo à Democracia Cultural”, realizada nas Caldas da Rainha, Portugal, onde apresentou o projeto no painel “Projetos Inspiradores I: ARTivismo, política, cidadania e direitos culturais”. O encontro foi organizado colaborativamente entre o Plano Nacional das Artes (PNA), a Rede Europeia de Observatórios no Campo das Artes e da Educação Cultural (ENO), a Fundação Calouste Gulbenkian, a Escola Superior de Artes e Design das Caldas da Rainha (ESAD.CR) (Cátedra UNESCO em “Gestão das Artes e da Cultura, Cidades e Criatividade” do Instituto Politécnico de Leiria) e deu seguimento à publicação da Carta de Porto Santo (2021).</p>
+                {% for dado in teste %}
+                {% if forloop.last %}
+                <h2 class="agenda-title"> {{dado.title}} </h2>
+                <p class="agenda-details">{{dado.event}}</p>
+
                 <div class="agenda__more">
-                    <p class="agenda__more-more"><a href="https://portosantocharter.eu/" target="_blank">SAIBA MAIS</a></p>
-                    <p class="agenda__more-others"><a href="https://www.youtube.com/watch?v=FQvJYir-FkA" target="_blank">LIVRO DE RESUMOS</a></p>
+                    
+                    <p class="agenda__more-more"><a href="{{dado.know_more}}" target="_blank">SAIBA MAIS</a></p>  
+                                   
+                    <p class="agenda__more-others"><a href="{{dado.book}}" target="_blank">LIVRO DE RESUMOS</a></p>
+                                        
+                    
+                    
                 </div>
+                {% endif %}
+                {% endfor %}
+
             </div>
 
         </div>

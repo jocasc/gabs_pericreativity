@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="{% static '/styles/css/reset.css' %}">
     <link rel="stylesheet" href="{% static '/styles/css/header.css' %}">
     <link rel="stylesheet" href="{% static '/styles/css/header-about.css' %}">
-    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">    
-            
+    <link rel="stylesheet" href="{% static '/styles/css/styles.css' %}">                
     <link rel="stylesheet" href="{% static '/styles/css/footer.css' %}">    
     <link rel="stylesheet" href="{% static '/styles/css/footer-about.css' %}">   
     <link rel="stylesheet" href="{% static '/styles/css/article-textos.css' %}">
@@ -80,11 +79,17 @@
         </div>
         <p class="titulo"><i>NOTAS</i>ETNOGRÁFICAS</p>
         <article>
-            <div class="card-textos">
-                <p><a href="{% url 'visita_ao_bairro' %}">VISITA AO BAIRRO DA TORRE EM CASCAIS</a></p>                
-                <p><a href="{% url 'visita_ao_bairro' %}">Otávio Raposo, Lígia Ferro, Pedro Varela, Beatriz Lacerda e Mateus Sadock</a></p>
-                <p><a href="{% url 'visita_ao_bairro' %}">Chegámos ao bairro pelas 12h30, onde fomos logo bem recebidos pela Mamãe pelo Lenin, que da janela nos diziam que o almoço estava já pronto a carregar. A cachupa, rica e deliciosa, preparada por Mamã, foi levada e servida na associação de moradores, antiga escola...</a></p>
+            
+            {% for etnografica in posts %}
+            <div class="card-textos">                
+                <p><a href="{{ etnografica.get_absolute_url }}">{{ etnografica.title}}</a></p>                
+                <p><a href="{{ etnografica.id }}">{{ etnografica.credits }}</a></p>
+                <p><a class="note_type" href="{{ etnografica.id }}">{{ etnografica.note.html|truncatechars:265|safe }}</a></p>
             </div>
+            {% endfor %}
+
+
+            
             <div class="card-textos" style="display:none">
                 <p><a href="#">EHENT UT UT IN PLITAEC ATURERE PEDITA DELLA AUDA</a></p>
                 <p><a href="#">Fulano de tal, Xipirito Cabral & Fulana de Tal</a></p>
@@ -102,6 +107,20 @@
             </div>            
         </article>
     </section>
+    <div class="paginacao">
+                
+        {% if page.has_previous %}
+        <a href="?page={{ page.previous_page_number }}"> << </a>
+        {% endif %}     
+        <!-- <span class="current">
+        Página {{ page.number }} de {{ page.paginator.num_pages }}.
+        </span> -->
+        <span>{{ page.number }} de {{ page.paginator.num_pages }}</span>
+        {% if page.has_next %}        
+        <a href="?page={{ page.next_page_number }}">>></a>
+        {% endif %}
+        
+    </div>
     <div class="hashtags">
         <p><i>#</i>NUVEMDETEMAS</p>
         #cidades&nbsp;&nbsp; #quebradas&nbsp;&nbsp; #bairros&nbsp;&nbsp; #aml&nbsp;&nbsp; #takeit&nbsp;&nbsp; #periferias
