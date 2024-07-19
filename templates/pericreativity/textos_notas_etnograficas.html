@@ -83,8 +83,8 @@
             {% for etnografica in posts %}
             <div class="card-textos">                
                 <p><a href="{{ etnografica.get_absolute_url }}">{{ etnografica.title}}</a></p>                
-                <p><a href="{{ etnografica.id }}">{{ etnografica.credits }}</a></p>
-                <p><a class="note_type" href="{{ etnografica.id }}">{{ etnografica.note.html|truncatechars:265|safe }}</a></p>
+                <p><a href="{{ etnografica.get_absolute_url }}">{{ etnografica.credits }}</a></p>
+                <p><a class="note_type" href="{{ etnografica.get_absolute_url }}">{{ etnografica.note.html|truncatechars:265|safe }}</a></p>
             </div>
             {% endfor %}
 
